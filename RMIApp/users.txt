@@ -1,0 +1,5 @@
+1/admin/admin/administrator
+
+2/sa/sa/super administrator
+
+3/su/su/super administrator level 2

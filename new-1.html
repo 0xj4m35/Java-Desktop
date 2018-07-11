@@ -1,0 +1,2902 @@
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+</head>
+<table style="width:100%">
+<tr><td><span >a</span></td><td><span >Given a Graphics object g, to draw an outline of a rectangle of width 20 and height 50 with the upper-left corner at (20, 20), you use __________.
+Select one:
+
+a. g.drawRect(20, 20, 20, 50);
+b. g.drawRectFill(20, 50, 20, 20);
+c. g.drawRectFill(20, 20, 20, 50);
+d. g.drawRect(20, 50, 20, 20);
+</td></tr><tr><td><span >c</span></td><td><span >Which method is used to set the text of a Label object?
+Select one:
+a. setLabelText
+b. setTextLabel
+c. setText
+d. setLabel
+</td></tr><tr><td><span >d</span></td><td><span >Which of these is a full form of DNS?
+Select one:
+a. Data Name Service
+b. Data Network Service
+c. Domain Network Service
+d. Domain Name Service
+</td></tr><tr><td><span >b</span></td><td><span >Which of the following set of code lines displays the current time in locale sensitive format?
+Select one:
+a. Date d = new Date(); System.out.println(d.toString());
+b. GregorianCalendar gcal = new GregorianCalendar(); DateFormat myFormat = DateFormat.getDateTimeInstance(); myFormat.setTimeZone(TimeZone.getTimeZone("CST")); System.out.println(myFormat.format(gcal.getTime()));
+c. GregorianCalendar gcal = new GregorianCalendar(new TimeZone("CST")); System.out.println(gcal.toString());
+d. GregorianCalendar gcal = new GregorianCalendar(); System.out.println(gcal.toString());
+</td></tr><tr><td><span >a</span></td><td><span >Given a Graphics object g, to draw a filled oval with width 20 and height 30 centered at (50, 50), you use __________.
+Select one:
+a. g.fillOval(40, 35, 20, 30);
+b. g.fillOval(30, 30, 20, 30);
+c. g.fillOval(30, 30, 40, 30);
+d. g.fillOval(50, 50, 40, 30);
+e. g.fillOval(50, 50, 20, 30);
+</td></tr><tr><td><span >a</span></td><td><span >Which layout should you use to organize the components of a container in a tabular form?
+Select one:
+a. GridLayout
+b. CardLayout
+c. FlowLayout
+d. BorderLayout
+</td></tr><tr><td><span >a</span></td><td><span >Which of the following statements are true regarding DecimalFormat?
+(1) A pattern can specify the minimum number of digits before the decimal point and the maximum number of digits after the decimal point.
+(2) The characters '0' and '#' are used to specify a required digit and an optional digit, respectively.
+(3) The optional digit is not displayed if it is zero.
+(4) If there are more actual digits before the decimal point, all the digits are displayed.
+ 
+Select one:
+a. All
+b. (1), (2) and (3)
+c. (1) and (2)
+d. (2), (3) and (4)
+</td></tr><tr><td><span >b</span></td><td><span >Which TextComponent method is used to set a TextComponent to the read-only state ?
+Select one:
+a. setTextReadOnly()
+b. setEditable()
+c. setReadOnly()
+d. setEditOnly()
+</td></tr><tr><td><span >c</span></td><td><span >Analyze the following code.
+
+import java.awt.*;
+import javax.swing.*;
+
+public class Test extends JFrame {
+ public Test() {
+ add(new MyDrawing("Welcome to Java!"));
+ }
+
+ public static void main(String[] args) {
+ JFrame frame = new JFrame();
+ frame.setSize(300, 300);
+ frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+ frame.setVisible(true);
+ }
+}
+
+class MyDrawing extends JPanel {
+ String message;
+
+ public MyDrawing(String message) {
+ this.message = message;
+ }
+
+ public void paintComponent(Graphics g) {
+ super.paintComponent(g);
+
+ g.drawString(message, 20 ,20);
+ }
+}
+ 
+Select one:
+a. The program would display Welcome to Java! if new JFrame() is replaced by new Test("My Frame").
+b. The program runs fine and displays Welcome to Java!
+c. The program would display Welcome to Java! if new JFrame() is replaced by new Test().
+d. The program would display Welcome to Java! if new JFrame() is replaced by Test().
+</td></tr><tr><td><span >d</span></td><td><span >Which Font attributes are not available through the FontMetrics class?
+Select one:
+a. ascent
+b. leading
+c. height
+d. case
+</td></tr><tr><td><span >c</span></td><td><span >Which of the following type of JDBC driver should be used when you are accessing one type of database, such as Oracle, Sybase, or IBM?
+Select one:
+a. Type 3 - drivers that use a pure Java client and communicate with a middleware server using a database-independent protocol.
+b. Type 1 - drivers that implement the JDBC API as a mapping to another data access API, such as ODBC.
+c. Type 4 - drivers that are pure Java and implement the network protocol for a specific data source. The client connects directly to the data source.
+d. Type 2 - drivers that are written partly in the Java programming language and partly in native code. These drivers use a native client library specific to the data source to which they connect.
+</td></tr><tr><td><span >a</span></td><td><span >Which of the following code displays the numbers with at least two digits before and after the decimal point?
+Select one:
+a. NumberFormat numberForm = NumberFormat.getNumberInstance(); DecimalFormat df = (DecimalFormat)numberForm;<br>df.applyPattern("00.00");
+b. NumberFormat numberForm = NumberFormat.getNumberInstance(); numberForm.setMaximumFractionDigits(2); numberForm.setMinimumFractionDigits(2);
+c. NumberFormat numberForm = NumberFormat.getNumberInstance();
+numberForm.setMaximumFractionDigits(2);
+</td></tr><tr><td><span >d</span></td><td><span >Which of the following code is correct to obtain hour from a Calendar object cal?
+Select one:
+a. cal.get(Hour);
+b. cal.getHour();
+c. cal.hour();
+d. cal.get(Calendar.HOUR);
+</td></tr><tr><td><span >d</span></td><td><span >Which of these method can be used to make the main thread to be executed last among all the threads?
+Select one:
+
+a. stop()
+b. call()
+c. join()
+d. sleep()
+</td></tr><tr><td><span >b</span></td><td><span >The statement ___________ removes the records from the table, but keeps in definition of the table in the database.
+(1) destory table Course;
+(2) drop table Course;
+(3) delete from Course;
+(4) delete Course;
+ 
+Select one:
+a. (2) and (3)
+b. (3) and (4)
+c. (1) and (2)
+d. (2) and (4)
+</td></tr><tr><td><span >c</span></td><td><span >The statement ___________ changes the Course title to Java Programming for the Course ID 11111.
+Select one:
+a. update table Course set title = "Java Programing" where courseId = "11111";
+b. update table Course set title = "Java Programing" where courseId = "11111";
+c. update Course set title = 'Java Programing' where courseId = '11111';
+d. update table Course set title = 'Java Programing' where courseId = '11111';
+</td></tr><tr><td><span >a</span></td><td><span >How many ports of TCP/IP are reserved for specific protocols?
+Select one:
+a. 1024
+b. 2048
+c. 512
+d. 10
+</td></tr><tr><td><span >d</span></td><td><span >What is the output of this program?
+1. class newthread implements Runnable {
+2. Thread t;
+3. newthread() {
+4. t = new Thread(this,"My Thread");
+5. t.start();
+6. }
+7. public void run() {
+8. System.out.println(t.getName());
+9. }
+10. }
+11. class multithreaded_programing {
+12. public static void main(String args[]) {
+13. new newthread(); 
+14. }
+15. }
+
+Select one:
+a. Thread[My Thread,5,main]
+b. Runtime Error
+c. Compilation Error
+d. My Thread
+</td></tr><tr><td><span >d</span></td><td><span >Which of these method is used to explicitly set the priority of a thread?
+Select one:
+a. make()
+b. makePriority()
+c. set()
+d. setPriority()
+</td></tr><tr><td><span >a</span></td><td><span >What is the output of this program?
+1. import java.net.*;
+2. class networking {
+3. public static void main(String[] args) throws UnknownHostException {
+4. InetAddress obj1 = InetAddress.getByName("cisco.com");
+5. InetAddress obj2 = InetAddress.getByName("sanfoundary.com");
+6. boolean x = obj1.equals(obj2); 
+7. System.out.print(x);
+8. }
+9. }
+
+Select one:
+a. false
+b. 1
+c. true
+d. 0
+</td></tr><tr><td><span >c</span></td><td><span >Which of these method is used to begin the execution of a thread?
+Select one:
+a. startThread()
+b. run()
+c. start()
+d. runThread()
+</td></tr><tr><td><span >c</span></td><td><span >Which of the following methods draws a filled 3D rectangle?
+(1) g.fill3DRect(50, 50, 20, 30);
+(2) g.fill3DRect(50, 50, 20, 30, 1);
+(3) g.fill3DRect(50, 50, 20, 30, true);
+(4) g.fill3DRect(50, 50, 20, 30, false);
+Select one:
+a. (1) and (2)
+b. (2) and (3)
+c. (3) and (4)
+d. (2), (3) and (4)
+</td></tr><tr><td><span >b</span></td><td><span >Which of the following is/are a Metadata interface/s of JDBC?
+(1) DatabaseMetaData
+(2) ResultSetMetaData
+ 
+Select one:
+a. (1)
+b. Both (1) and (2)
+c. (2)
+d. None of them
+</td></tr><tr><td><span >a</span></td><td><span >Which of these statement is incorrect?
+Select one:
+a. run() method is used to begin execution of a thread before start() method in special cases.
+b. start() method is used to begin execution of the thread.
+c. A thread can be formed by implementing Runnable interface only.
+d. A thread can be formed by a class that extends Thread class.
+</td></tr><tr><td><span >a</span></td><td><span >Which of the following methods is correct to obtain the available locales in the classes Calendar, Collator, DateFormat, and NumberFormat?
+Select one:
+a. getAvailableLocales()
+b. getAllLocales()
+c. getLocales()
+d. availableLocales()
+</td></tr><tr><td><span >b</span></td><td><span >Which of these class is used to encapsulate IP address and DNS?
+Select one:
+a. ContentHandler
+b. InetAddress
+c. URL
+d. DatagramPacket
+</td></tr><tr><td><span >a</span></td><td><span >What is Remote method invocation (RMI)?
+Select one:
+a. RMI allows us to invoke a method of java object that executes on another Thread in multithreaded programming.
+b. None of the others
+c. RMI allows us to invoke a method of java object that executes parallely in same machine.
+d. RMI allows us to invoke a method of java object that executes on another machine.
+</td></tr><tr><td><span >a</span></td><td><span >Which one of the following could be the last item that would complete import javax.swing?
+Select one:
+a. JTextField
+b. TextBox
+c. TextField
+d. JTextBox
+</td></tr><tr><td><span >
+c</span></td><td><span >How do you indicate where a component will be positioned using Flowlayout?
+Select one:
+a. Assign a row/column grid reference
+b. North, South, East, West
+c. Do nothing, the FlowLayout will position the component
+d. Pass a X/Y percentage parameter to the add method
+</td></tr><tr><td><span >d</span></td><td><span >How do you set a button jbt's text to a character with the Unicode 13AE?
+Select one:
+a. jbt.setText("\13AE");
+b. jbt.setText("/13AE");
+c. jbt.setText("13AE");
+d. jbt.setText("\u13AE");
+e. jbt.setText('\u13AE');
+</td></tr><tr><td><span >d</span></td><td><span >To syntax for creating a table named Course should begin with __________.
+Select one:
+a. create Course {
+b. create Course {
+c. create table Course {
+d. create table Course (
+</td></tr><tr><td><span >b</span></td><td><span >Which of the following sets the frame to 300 pixels wide by 200 high?
+Select one:
+a. frm.paint( 300, 200 );
+b. frm.setSize( 300, 200 );
+c. frm.setVisible( 300, 200 );
+d. frm.setSize( 200, 300 );
+</td></tr><tr><td><span >c</span></td><td><span >What is the output of this program?
+1. class newthread implements Runnable {
+2. Thread t;
+3. newthread() {
+4. t = new Thread(this,"New Thread");
+5. t.start();
+6. }
+7. public void run() {
+8. t.setPriority(Thread.MAX_PRIORITY); 
+9. System.out.println(t);
+10. }
+11. }
+12. class multithreaded_programing {
+13. public static void main(String args[]) {
+14. new newthread(); 
+15. }
+16. }
+
+Select one:
+a. Thread[New Thread,1,main]
+b. Thread[New Thread,5,main]
+c. Thread[New Thread,10,main]
+d. Thread[New Thread,0,main]
+</td></tr><tr><td><span >d</span></td><td><span >Which of the following code is correct to set a time zone in a Calendar object?
+Select one:
+a. cal.get(Calendar.HOUR);
+b. cal.getTimeZone();
+c. cal.timeZone("CST");
+d. cal.setTimeZone("CST");
+</td></tr><tr><td><span >c</span></td><td><span >Which of these method waits for the thread to treminate?
+Select one:
+a. isAlive()
+b. sleep()
+c. join()
+d. stop()
+</td></tr><tr><td><span >d</span></td><td><span >Suppose DateFormatSymbols symbols = new DateFormatSymbols(), Which of the following statements is correct to return month names?
+Select one:
+a. String[] weekdayNames = symbols.getWeekdays();
+b. String[] eras = symbols.getAmPmStrings();
+c. String[] eras = symbols.getEras();
+d. String[] monthNames = symbols.getMonths();
+</td></tr><tr><td><span >d</span></td><td><span >Which of the following classes have the getAvailableLocales() method?
+Select one:
+a. Calendar
+b. DateFormat
+c. NumberFormat
+d. All of the others
+e. Collator
+</td></tr><tr><td><span >d</span></td><td><span >Which of these method is used to implement Runnable interface?
+Select one:
+a. stop()
+b. runThread()
+c. stopThread()
+d. run()
+</td></tr><tr><td><span >c</span></td><td><span >Which of the following code is correct to create an instance for formatting numbers in percent?
+(1) NumberFormat.getPercentInstance(locale);
+(2) NumberFormat.getPercentInstance();
+(3) NumberFormat.percentInstance(locale);
+(4) NumberFormat.percentInstance();
+ 
+Select one:
+a. (2) and (3)
+b. (1) and (4)
+c. (1) and (2)
+d. (3) and (4)
+</td></tr><tr><td><span >b c</span></td><td><span >Which of the following are direct or indirect subclasses of Container? (Select Multiple)
+Select one or more:
+a. TextArea
+b. FileDialog
+c. Frame
+d. MenuBar
+</td></tr><tr><td><span >c</span></td><td><span >Which of the following are valid methods in NumberFormat?
+Select one:
+a. setMaximumIntegerDigits(int)
+b. setMinimumIntegerDigits(int)
+c. All of the others
+d. format(long)
+e. format(double)
+</td></tr><tr><td><span >d</span></td><td><span >Which of these exception is thrown by URL class's constructors?
+Select one:
+a. URLSourceNotFound
+b. URLNotFoundException
+c. URLNotFound
+d. MalformedURLException
+</td></tr><tr><td><span >b</span></td><td><span >Which of the following statements are true?
+Select one:
+a. The paintComponent method is automatically invoked by the JVM. You should never invoke it directly.
+b. All of the others.
+c. Whenever a GUI component is displayed, its Graphics object is automatically created.
+d. The paintComponent method is automatically invoked by the JVM. You should never invoke it directly.
+</td></tr><tr><td><span >b</span></td><td><span >What is the name of the Swing class that is used for frames?
+Select one:
+a. Frame
+b. JFrame
+c. SwingFrame
+d. Window
+</td></tr><tr><td><span >b</span></td><td><span >You can draw graphics on any GUI components.
+Select one:
+a. false
+b. true
+</td></tr><tr><td><span >c</span></td><td><span >In a relational data model, ________ provides the means for accessing and manipulating data.
+(1) Structure
+(2) Integrity
+(3) Language
+(4) SQL
+ 
+Select one:
+a. (1) and (4)
+b. (1) and (2)
+c. (3) and (4)
+d. (2) and (3)
+</td></tr><tr><td><span >d</span></td><td><span >Suppose that NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(Locale.US). Which of the following statement is legal?
+Select one:
+a. Number number = currencyFormat.parseCurrency("$5,000.56");
+b. Number number = NumberFormat.parse("$5,000.56");
+c. Number number = currencyFormat.parse("5,000.56");
+d. Number number = currencyFormat.parse("$5,000.56");
+</td></tr><tr><td><span >a</span></td><td><span >All swing components are light weight components except for
+Select one or more:
+a. JPanel
+b. JTextField
+c. JFrame
+d. JButton
+</td></tr><tr><td><span >c</span></td><td><span >To drop the Course table, use __________.
+(1) drop Course;
+(2) drop table Course;
+(3) DROP TABLE COURSE;
+(4) DROP COURSE;
+ 
+Select one:
+a. (1) and (2)
+b. (1), (2) and (3)
+c. (2) and (3)
+d. (3) and (4)
+</td></tr><tr><td><span >a</span></td><td><span >Which of the following step closes a connection with a database?
+Select one:
+a. Clean up the environment by closing all database resources relying on the JVM's garbage collection.
+b. Open a connection using the DriverManager.getConnection () method.
+c. Execute a query using an object of type Statement.
+d. Extract data from result set using the appropriate ResultSet.getXXX () method.
+</td></tr><tr><td><span >d</span></td><td><span >The coordinate of the upper-left corner of a frame is __________.
+Select one:
+a. (10, 10)
+b. (100, 100)
+c. (25, 25)
+d. (0, 0)
+</td></tr><tr><td><span >d</span></td><td><span >How many bits are in a single IP address?
+Select one:
+a. 16
+b. 8
+c. 64
+d. 32
+</td></tr><tr><td><span >a</span></td><td><span >Fill in the blanks so that this program displays a JFrame
+import java.awt.*;
+import javax.swing.*;
+public class Main
+{
+ public static void main ( String[] args )
+ {
+ JFrame frm = new ___________();
+ frm.___________( 150, 100 );
+ frm.___________( true );
+ }
+}
+Select one:
+a. JFrame, setSize, setVisible
+b. Form, setVisible, setOn
+c. Window, setSize, paint
+d. Frame, setVisible, setSize
+</td></tr><tr><td><span >b</span></td><td><span >Which of the following methods is defined in the Locale class?
+Select one:
+a. getCountry()
+b. All of the others
+c. getVariant()
+d. getLanguage()
+</td></tr><tr><td><span >b</span></td><td><span >Which of these package contains classes and interfaces for networking?
+Select one:
+a. java.io
+b. java.net
+c. java.util
+d. java.network
+</td></tr><tr><td><span >d</span></td><td><span >To syntax for inserting a record into the Course table may begin with __________.
+Select one:
+a. insert into table Course (
+b. insert into table Course {
+c. insert into Course {
+d. insert into Course (
+</td></tr><tr><td><span >b</span></td><td><span >What is the output of this program?
+1. class newthread implements Runnable {
+2. Thread t;
+3. newthread() {
+4. t = new Thread(this,"My Thread");
+5. t.start();
+6. }
+7. }
+8. class multithreaded_programing {
+9. public static void main(String args[]) {
+10. new newthread(); 
+11. }
+12. }
+
+Select one:
+a. Thread[My Thread,5,main]
+b. Compilation Error
+c. Runtime Error
+d. My Thread
+</td></tr><tr><td><span >c</span></td><td><span >In a relational data model, _________ imposes constraints on the data.
+Select one:
+a. SQL
+b. Language
+c. Integrity
+d. Structure
+</td></tr><tr><td><span >
+A</span></td><td><span >Lightweight components differ from heavy weight componants not because of one of the following reasons
+Select one:
+
+A heavyweight component have transparent pixels which lightweight have opaque.
+
+Mouse events on light weight componants fall through its parents while in the heavyweight it doesn't.
+
+On overlapping of the lightweight component over the heavy weight component the heavy weight component is always on top.
+
+A lightweight can appear to be non-rectangular while heavyweight are always rectangular.
+
+-Explanination:
+Heavy weight component is created by the operating system.
+Its size or place or pixel are changed according to 
+OS. 
+Source: http://www.geekinterview.com/question_details/20266
+</td></tr><tr><td><span >D</span></td><td><span >Which one of the following could be the last item that would complete import javax.swing?
+Select one:
+TextField
+JTextBox
+TextBox
+JTextField
+</td></tr><tr><td><span >C</span></td><td><span >What is the output of this program?
+1. import java.io.*;
+2. class streams {
+3. public static void main(String[] args) {
+4. try {
+5. FileOutputStream fos = new FileOutputStream("serial");
+6. ObjectOutputStream oos = new ObjectOutputStream(fos);
+7. oos.writeFloat(3.5);
+8. oos.flush();
+9. oos.close();
+10. }
+11. catch(Exception e) {
+12. System.out.println("Serialization" + e);
+13. System.exit(0);
+14. }
+15. try {
+16. FileInputStream fis = new FileInputStream("serial");
+17. ObjectInputStream ois = new ObjectInputStream(fis);
+18. System.out.println(ois.available()); 
+19. ois.close();
+20. }
+21. catch (Exception e) {
+22. System.out.print("deserialization");
+23. System.exit(0);
+24. }
+25. }
+26. }
+
+Select one:
+3
+1
+4 <-- float is 4 byte
+2
+</td></tr><tr><td><span >D</span></td><td><span >Which of these Exceptions is thrown by remote method?
+Select one:
+RemoteAccessException
+RemoteInputOutputException
+InputOutputException
+RemoteException
+</td></tr><tr><td><span >D</span></td><td><span >Which method will cause a JFrame to be displayed?
+Select one:
+displayJFrame
+display
+showJFrame
+setVisible
+</td></tr><tr><td><span >C</span></td><td><span >Which of the following are valid methods in NumberFormat?
+Select one:
+setMaximumIntegerDigits(int)
+
+format(double)
+
+All of the others
+
+format(long)
+
+setMinimumIntegerDigits(int)
+</td></tr><tr><td><span >B</span></td><td><span >In a relational data model, _________ imposes constraints on the data.
+Select one:
+Structure
+Integrity
+SQL
+Language
+</td></tr><tr><td><span >B</span></td><td><span >Fill in the blanks so that this program displays a JFrame
+import java.awt.*;
+import javax.swing.*;
+public class Main
+{
+ public static void main ( String[] args )
+ {
+ JFrame frm = new ___________();
+ frm.___________( 150, 100 );
+ frm.___________( true );
+ }
+}
+Select one:
+Window, setSize, paint
+JFrame, setSize, setVisible
+Frame, setVisible, setSize
+Form, setVisible, setOn
+</td></tr><tr><td><span >B</span></td><td><span >To retrieve all courses with more than 3 credit hours, you write 
+select * from Course
+where numOfCredits > 3;
+Is this statement correct?
+Select one:
+No
+Yes
+</td></tr><tr><td><span >E</span></td><td><span >What are the features coming with JFC?
+Select one:
+a. Pluggable Look-and-Feel
+b. Accessibility API
+c. Java 2D/API(JDK 1.2 and later).
+d. Drag and Drop Support(JDK 1.2 and later)
+e. All of above
+
+Source: http://www.geekinterview.com/question_details/20280
+</td></tr><tr><td><span >D</span></td><td><span >Which of these methods are member of Remote class?
+Select one:
+addLocation()
+AddServer()
+checkIP()
+None of the others
+</td></tr><tr><td><span >C</span></td><td><span >Which of the following can cause 'No suitable driver' error?
+Select one:
+This error can occur if one or more the shared libraries needed by the bridge cannot be loaded.
+Due to failing to load the appropriate JDBC drivers before calling the DriverManager.getConnection method.
+All of the others
+It can be specifying an invalid JDBC URL, one that is not recognized by JDBC driver.
+
+Source: http://www.careerride.com/JDBC-No-suitable-driver.aspx
+</td></tr><tr><td><span >A</span></td><td><span >Which of these class is used to encapsulate IP address and DNS?
+Select one:
+InetAddress
+ContentHandler
+DatagramPacket
+URL
+
+Explanation: InetAddress class encapsulate both IP address and DNS, we can interact with this class by using name of an IP host.
+</td></tr><tr><td><span >B</span></td><td><span >How would you set the color of a graphics context called g to cyan?
+Select one:
+g.setColor("Color.cyan");
+g.setColor(Color.cyan);
+g.setColor(new Color(cyan));
+g.setColor(cyan);
+g.setCurrentColor(cyan);
+</td></tr><tr><td><span >A</span></td><td><span >Which of the following is/are correct about driver interface of JDBC?
+(1) JDBC driver is an interface enabling a Java application to interact with a database.
+(2) The JDBC driver gives out the connection to the database and implements the protocol for transferring the query and result between client and database.
+ 
+Select one:
+Both (1) and (2)
+(1)
+(2)
+None of them
+</td></tr><tr><td><span >D</span></td><td><span >What is Remote method invocation (RMI)?
+Select one:
+None of the others
+RMI allows us to invoke a method of java object that executes parallely in same machine.
+RMI allows us to invoke a method of java object that executes on another Thread in multithreaded programming.
+RMI allows us to invoke a method of java object that executes on another machine.
+</td></tr><tr><td><span >A</span></td><td><span >Which TextComponent method is used to set a TextComponent to the read-only state ?
+Select one:
+setEditable()
+setEditOnly()
+setTextReadOnly()
+setReadOnly()
+</td></tr><tr><td><span >C</span></td><td><span >What is the output of this program?
+1. class newthread implements Runnable {
+2. Thread t;
+3. newthread() {
+4. t = new Thread(this,"My Thread");
+5. t.start();
+6. }
+7. public void run() {
+8. System.out.println(t.getName());
+9. }
+10. }
+11. class multithreaded_programing {
+12. public static void main(String args[]) {
+13. new newthread(); 
+14. }
+15. }
+
+Select one:
+Compilation Error
+Runtime Error
+My Thread
+Thread[My Thread,5,main]
+</td></tr><tr><td><span >D</span></td><td><span >Which of these methods is used to know host of an URL?
+Select one:
+gethost()
+GetHost()
+host()
+getHost()
+</td></tr><tr><td><span >B</span></td><td><span >Analyze the following code.
+
+import java.awt.*;
+import javax.swing.*;
+
+public class Test {
+ public static void main(String[] args) {
+ JFrame frame = new JFrame("My Frame");
+ frame.add(new MyDrawing("Welcome to Java!"));
+ frame.setSize(300, 300);
+ frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+ frame.setVisible(true);
+ frame.setVisible(true);
+ }
+}
+
+class MyDrawing extends JPanel {
+ String message;
+
+ public MyDrawing(String message) {
+ this.message = message;
+ }
+
+ public void paintcomponent(Graphics g) {
+ super.paintComponent(g);
+
+ g.drawString(message, 20 ,20);
+ }
+} 
+Select one:
+The program has a runtime error because the paintcomponent should be spelled as paintComponent.
+The program runs, but it does not display the message.
+The program has a compile error because the paintcomponent should be spelled as paintComponent.
+It is a runtime error to invoke the setVisible(true) twice.
+The program runs fine and displays Welcome to Java!
+</td></tr><tr><td><span >AB</span></td><td><span >Which of the following are true? (Select 2 options)
+Select one or more:
+A component may handle its own events by adding itself as an event listener.
+A component may handle its own events by overriding its event-dispatching method.
+A component may not handle oits own events.
+A component may handle its own events only if it implements the handleEventegg method.
+</td></tr><tr><td><span >E</span></td><td><span >Given a Graphics object g, to draw a filled oval with width 20 and height 30 centered at (50, 50), you use __________.
+Select one:
+
+g.fillOval(50, 50, 20, 30);
+ g.fillOval(30, 30, 40, 30);
+g.fillOval(30, 30, 20, 30);
+g.fillOval(50, 50, 40, 30);
+g.fillOval(40, 35, 20, 30);
+</td></tr><tr><td><span >B</span></td><td><span >What method sets the size of the displayed JFrame?
+Select one:
+setVisible( int height, int width)
+setSize( int width, int height)
+setVisible( int width, int height)
+setSize( int height, int width)
+</td></tr><tr><td><span >D</span></td><td><span >Which of the following is/are a Metadata interface/s of JDBC?
+(1) DatabaseMetaData
+(2) ResultSetMetaData
+ 
+Select one:
+(1)
+None of them
+(2)
+Both (1) and (2)
+</td></tr><tr><td><span >C</span></td><td><span >Which of these class is used to make a thread?
+Select one:
+Runnable
+System
+Thread
+String
+</td></tr><tr><td><span >D</span></td><td><span >What is the output of this program?
+1. class newthread implements Runnable {
+2. Thread t;
+3. newthread() {
+4. t = new Thread(this,"My Thread");
+5. t.start();
+6. }
+7. public void run() {
+8. System.out.println(t);
+9. }
+10. }
+11. class multithreaded_programing {
+12. public static void main(String args[]) {
+13. new newthread(); 
+14. }
+15. }
+
+Select one:
+Compilation Error
+My Thread
+Runtime Error
+Thread[My Thread,5,main]
+</td></tr><tr><td><span >D</span></td><td><span >What is the output of this program?
+1. import java.net.*;
+2. class networking {
+3. public static void main(String[] args) throws UnknownHostException {
+4. InetAddress obj1 = InetAddress.getByName("sanfoundary.com");
+5. InetAddress obj2 = InetAddress.getByName("sanfoundary.com");
+6. boolean x = obj1.equals(obj2); 
+7. System.out.print(x);
+8. }
+9. }
+
+Select one:
+0
+1
+false
+true
+</td></tr><tr><td><span >C</span></td><td><span >Which of the following gives out the connection to the database and implements the protocol for transferring the query and result between client and database?
+Select one:
+Connection
+Statement
+JDBC driver
+DriverManager
+</td></tr><tr><td><span >A</span></td><td><span >Given a Graphics object g, to draw an outline of a rectangle of width 20 and height 50 with the upper-left corner at (20, 20), you use __________.
+Select one:
+
+g.drawRect(20, 20, 20, 50);
+ g.drawRectFill(20, 50, 20, 20);
+g.drawRect(20, 50, 20, 20);
+g.drawRectFill(20, 20, 20, 50);
+</td></tr><tr><td><span >D</span></td><td><span >What is the output of this program?
+1. class newthread implements Runnable {
+2. Thread t;
+3. newthread() {
+4. t = new Thread(this,"My Thread");
+5. t.start();
+6. }
+7. }
+8. class multithreaded_programing {
+9. public static void main(String args[]) {
+10. new newthread(); 
+11. }
+12. }
+
+Select one:
+Thread[My Thread,5,main]
+My Thread
+Runtime Error
+Compilation Error
+</td></tr><tr><td><span >D</span></td><td><span >Which of the following code is correct to create an instance for formatting numbers in currency?
+(1) NumberFormat.getCurrencyInstance(locale);
+(2) NumberFormat.getCurrencyInstance();
+(3) NumberFormat.currencyInstance(locale);
+(4) NumberFormat.currencyInstance();
+ 
+Select one:
+(2) and (3)
+(1) and (4)
+(3) and (4)
+(1) and (2)
+</td></tr><tr><td><span >C</span></td><td><span >What is synchronization in reference to a thread?
+Select one:
+Its a process by which many thread are able to access same shared resource simultaneously.
+Its a method that allow to many threads to access any information require.
+It's a process of handling situations when two or more threads need access to a shared resource.
+Its a process by which a method is able to access many different threads simultaneously
+Source: http://www.sanfoundry.com/java-mcqs-isalive-join-thread-synchronization/
+</td></tr><tr><td><span >C</span></td><td><span >Which of these class is used to access actual bits or content information of a URL?
+Select one:
+URLDecoder
+URL
+All of the others
+URLConnection
+http://www.sanfoundry.com/java-mcqs-url-class/
+</td></tr><tr><td><span >B</span></td><td><span >What is the output of this program?
+1. import java.net.*;
+2. class networking {
+3. public static void main(String[] args) throws MalformedURLException {
+4. URL obj = new URL("http://www.sanfoundry.com/javamcq");
+5. System.out.print(obj.getProtocol());
+6. }
+7. }
+
+Select one:
+com
+http
+www
+https
+</td></tr><tr><td><span >A</span></td><td><span >Which of the following statements is true?
+Select one:
+All of the others.
+The Graphics object is automatically created for each visible GUI component.
+If a GUI component is not visible, getGraphics() returns null.
+Once a GUI component is visible, getGraphics() returns the object.
+Each GUI component contains a Graphics object that can be obtained using getGraphics() method.
+</td></tr><tr><td><span >C</span></td><td><span >Which of these method can be used to make the main thread to be executed last among all the threads?
+Select one:
+
+stop()
+call()
+sleep()
+join()
+</td></tr><tr><td><span >C</span></td><td><span >Which of these package is used for remote method invocation?
+Select one:
+java.lang.rmi
+java.applet
+java.rmi
+java.lang.reflect
+</td></tr><tr><td><span >D</span></td><td><span >Which of the following set of code lines displays the current time in locale sensitive format?
+Select one:
+GregorianCalendar gcal = new GregorianCalendar(); System.out.println(gcal.toString());
+
+GregorianCalendar gcal = new GregorianCalendar(new TimeZone("CST")); System.out.println(gcal.toString());
+
+Date d = new Date(); System.out.println(d.toString());
+
+GregorianCalendar gcal = new GregorianCalendar(); DateFormat myFormat = DateFormat.getDateTimeInstance(); myFormat.setTimeZone(TimeZone.getTimeZone("CST")); System.out.println(myFormat.format(gcal.getTime()));
+</td></tr><tr><td><span >B</span></td><td><span >Which of the following methods is defined in the Locale class?
+Select one:
+getVariant()
+All of the others
+getCountry()
+getLanguage()
+</td></tr><tr><td><span >CD</span></td><td><span >Which of the following are direct or indirect subclasses of Container? (Select Multiple)
+Select one or more:
+MenuBar
+TextArea
+FileDialog
+Frame
+http://howtoconfigure.blogspot.com/2013/09/core-java-interview-questions-and_3560.html
+</td></tr><tr><td><span >A</span></td><td><span >Which of the following code displays the numbers with at least two digits before and after the decimal point?
+Select one:
+NumberFormat numberForm = NumberFormat.getNumberInstance(); DecimalFormat df = (DecimalFormat)numberForm;<br>df.applyPattern("00.00");
+
+NumberFormat numberForm = NumberFormat.getNumberInstance(); numberForm.setMaximumFractionDigits(2); numberForm.setMinimumFractionDigits(2);
+
+NumberFormat numberForm = NumberFormat.getNumberInstance();
+numberForm.setMaximumFractionDigits(2);
+</td></tr><tr><td><span >C</span></td><td><span >To repaint graphics, invoke __________ on a Swing component
+Select one:
+update()
+paintComponent()
+repaint()
+init()
+</td></tr><tr><td><span >A</span></td><td><span >Which of the following constants are the valid date and time format?
+Select one:
+All of the others
+DateFormat.SHORT
+DateFormat.MEDIUM
+DateFormat.FULL
+DateFormat.LONG
+</td></tr><tr><td><span >C</span></td><td><span >Which of these interface is implemented by Thread class?
+Select one:
+Connections
+Set
+Runnable
+MapConnections
+</td></tr><tr><td><span >A</span></td><td><span >All swing components are light weight components except for
+Select one or more:
+JFrame
+JPanel
+JButton
+JTextField
+
+All components in Project Swing, except JApplet, JDialog, JFrame and JWindow are lightweight components
+</td></tr><tr><td><span >D</span></td><td><span >What is the output of this program?
+1. import java.net.*;
+2. class networking {
+3. public static void main(String[] args) throws MalformedURLException {
+4. URL obj = new URL("http://www.sanfoundry.com/javamcq");
+5. System.out.print(obj.toExternalForm());
+6. }
+7. }
+
+Select one:
+sanfoundry.com
+www.sanfoundry.com
+sanfoundry
+http://www.sanfoundry.com/javamcq
+</td></tr><tr><td><span >A</span></td><td><span >How many ports of TCP/IP are reserved for specific protocols?
+Select one:
+1024
+512
+10
+2048
+</td></tr><tr><td><span >D</span></td><td><span >How do you set a button jbt's text to a character with the Unicode 13AE?
+Select one:
+jbt.setText("13AE");
+jbt.setText('\u13AE');
+jbt.setText("/13AE");
+jbt.setText("\u13AE");
+jbt.setText("\13AE");
+</td></tr><tr><td><span >D</span></td><td><span >What is a container object in GUI programming?
+Select one:
+A container is a primitive variable that contains the actual data.
+A container is any class that is made up of other classes.
+A container is another name for an array or vector.
+A container is an object like a frame that has other GUI components placed inside of it.
+</td></tr><tr><td><span >B</span></td><td><span >What is the name of the Swing class that is used for frames?
+Select one:
+Window
+JFrame
+Frame
+SwingFrame
+</td></tr><tr><td><span >D</span></td><td><span >Which of these package contains classes and interfaces for networking?
+Select one:
+java.io
+java.util
+java.network
+java.net
+</td></tr><tr><td><span >A</span></td><td><span >Which of these method waits for the thread to treminate?
+Select one:
+join()
+isAlive()
+sleep()
+stop()
+</td></tr><tr><td><span >B</span></td><td><span >To draw graphics, it is better to define a class that extends ________ and override the paintComponent method.
+Select one:
+JButton
+JPanel
+JLabel
+JComponent
+</td></tr><tr><td><span >C</span></td><td><span >Which of the following statements are true?
+Select one:
+SimpleDateFormat is a subclass of DateFormat.
+
+You can obtain localizable date-time formatting data, such as the names of the months, the names of the days of the week, and the time zone data, from an instance of DateFormatSymbols.
+
+All of the others
+
+SimpleDateFormat enables you to choose any user-defined pattern for date and time formatting.
+</td></tr><tr><td><span >A</span></td><td><span >Which of these statement is incorrect?
+Select one:
+run() method is used to begin execution of a thread before start() method in special cases.
+A thread can be formed by a class that extends Thread class.
+A thread can be formed by implementing Runnable interface only.
+start() method is used to begin execution of the thread.
+
+-> A (Explanation: run() method is used to define the code that constitutes the new thread, it contains the code to be executed. start() method is used to begin execution of the thread that is execution of run(). run() itself is never used for starting execution of the thread.)
+</td></tr><tr><td><span >A</span></td><td><span >Analyze the following code.
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Test1 extends JFrame {
+ public Test1() {
+ add(new MyCanvas());
+ }
+
+ public static void main(String[] args) {
+ JFrame frame = new Test1();
+ frame.setSize(300, 300);
+ frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+ frame.setVisible(true);
+ }
+}
+
+class MyCanvas extends JPanel {
+ private String message;
+
+ public void setMessage(String message) {
+ this.message = message;
+ }
+
+ public void paintComponent(Graphics g) {
+ super.paintComponent(g);
+
+ g.drawString(message, 20, 20);
+ }
+}
+ 
+Select one:
+The program has a NullPointerException since message is null when g.drawString(message, 20, 20) is executed.
+The program runs fine and displays nothing since you have not set a string value.
+The program would display Welcome to Java! if you replace new MyCanvas() by new MyCanvas("Welcome to Java!").
+The program has a compile error because new Test1() is assigned to frame.
+</td></tr><tr><td><span >A</span></td><td><span >In a relational data model, _________ defines the representation of the data.
+Select one:
+Structure
+Language
+SQL
+Integrity
+</td></tr><tr><td><span >D</span></td><td><span >The size of a frame on the screen is measured in:
+Select one:
+inches
+dots
+nits
+pixels
+</td></tr><tr><td><span >AB</span></td><td><span >What is the difference between scrollbar and scrollpane(Select 2 options)
+Select one or more:
+Scrollpane handles its own events and performs its own scrolling.
+Scrollbar is a component while scrollpane is a container
+Scrollbar handles its own events while scrollpane does not
+
+http://www.careerride.com/Java-events-Scrollbar-vs-ScrollPane.aspx
+</td></tr><tr><td><span >B</span></td><td><span >You should override the __________ method to draw things on a Swing component.
+Select one:
+init()
+paintComponent()
+repaint()
+update()
+</td></tr><tr><td><span >A</span></td><td><span >What is the output of this program?
+1. import java.net.*;
+2. class networking {
+3. public static void main(String[] args) throws MalformedURLException {
+4. URL obj = new URL("http://www.sanfoundry.com/javamcq");
+5. System.out.print(obj.getPort());
+6. }
+7. }
+
+Select one:
+-1
+0
+garbage value
+1
+</td></tr><tr><td><span >D</span></td><td><span >The statement ___________ removes the records from the table, but keeps in definition of the table in the database.
+(1) destory table Course;
+(2) drop table Course;
+(3) delete from Course;
+(4) delete Course;
+ 
+Select one:
+(2) and (4)
+(3) and (4)
+(1) and (2)
+(2) and (3)
+</td></tr><tr><td><span >D</span></td><td><span >How do you create a locale for the United States?
+(1) new Locale("en", "US");
+(2) new Locale("US", "en");
+(3) Locale.US;
+(4) Locale.getLocale("en", "US");
+Select one:
+(2) and (3)
+(2) and (4)
+(1) and (4)
+(1) and (3)
+</td></tr><tr><td><span >C</span></td><td><span >Which of these method is used to find out that a thread is still running or not?
+Select one:
+run()
+chackRun()
+isAlive()
+Alive()
+</td></tr><tr><td><span >A</span></td><td><span >Given a Graphics object g, to draw a line from the upper left corner to the bottom right corner, you use __________.
+Select one:
+g.drawLine(0, 0, getWidth(), getHeight());
+g.drawLine(0, 0, 100, 100);
+g.drawLine(0, 0, getWidth(), getWidth());
+g.drawLine(0, 0, getHeight(), getHeight());
+</td></tr><tr><td><span >C</span></td><td><span >Which of the following code is correct to create an instance for formatting numbers in percent?
+(1) NumberFormat.getPercentInstance(locale);
+(2) NumberFormat.getPercentInstance();
+(3) NumberFormat.percentInstance(locale);
+(4) NumberFormat.percentInstance();
+ 
+Select one:
+(3) and (4)
+(2) and (3)
+(1) and (2)
+(1) and (4)
+</td></tr><tr><td><span >A</span></td><td><span >What is the output of this program?
+1. class newthread implements Runnable {
+2. Thread t1,t2;
+3. newthread() {
+4. t1 = new Thread(this,"Thread_1");
+5. t2 = new Thread(this,"Thread_2");
+6. t1.start();
+7. t2.start();
+8. }
+9. public void run() {
+10. t2.setPriority(Thread.MAX_PRIORITY); 
+11. System.out.print(t1.equals(t2));
+12. } 
+13. }
+14. class multithreaded_programing {
+15. public static void main(String args[]) {
+16. new newthread(); 
+17. }
+18. }
+
+Select one:
+falsefalse
+truetrue
+true
+false
+</td></tr><tr><td><span >A</span></td><td><span >Which of the following type of JDBC driver should be used when you are accessing one type of database, such as Oracle, Sybase, or IBM?
+Select one:
+Type 4 - drivers that are pure Java and implement the network protocol for a specific data source. The client connects directly to the data source.
+Type 1 - drivers that implement the JDBC API as a mapping to another data access API, such as ODBC.
+Type 2 - drivers that are written partly in the Java programming language and partly in native code. These drivers use a native client library specific to the data source to which they connect.
+Type 3 - drivers that use a pure Java client and communicate with a middleware server using a database-independent protocol.
+</td></tr><tr><td><span >D</span></td><td><span >What is the output of this program?
+1. import java.net.*;
+2. class networking {
+3. public static void main(String[] args) throws UnknownHostException {
+4. InetAddress obj1 = InetAddress.getByName("cisco.com");
+5. InetAddress obj2 = InetAddress.getByName("sanfoundary.com");
+6. boolean x = obj1.equals(obj2); 
+7. System.out.print(x);
+8. }
+9. }
+
+Select one:
+true
+0
+1
+false
+</td></tr><tr><td><span >C</span></td><td><span >To syntax for creating a table named Course should begin with __________.
+Select one:
+create table Course {
+create Course {
+create table Course (
+create Course {
+</td></tr><tr><td><span >C</span></td><td><span >What is the output of this program?
+1. import java.net.*;
+2. class networking {
+3. public static void main(String[] args) throws MalformedURLException {
+4. URL obj = new URL("http://www.sanfoundry.com/javamcq");
+5. System.out.print(obj.getHost());
+6. }
+7. }
+
+Select one:
+sanfoundry.com
+http://www.sanfoundry.com/javamcq
+www.sanfoundry.com
+sanfoundry
+</td></tr><tr><td><span >A</span></td><td><span >Which of these methods is used to know the full URL of an URL object?
+Select one:
+toExternalForm()
+getHost()
+fullHost()
+ExternalForm()
+</td></tr><tr><td><span >C</span></td><td><span >What is the output of this program?
+1. class newthread implements Runnable {
+2. Thread t;
+3. newthread() {
+4. t = new Thread(this,"New Thread");
+5. t.start();
+6. }
+7. public void run() {
+8. t.setPriority(Thread.MAX_PRIORITY); 
+9. System.out.println(t);
+10. }
+11. }
+12. class multithreaded_programing {
+13. public static void main(String args[]) {
+14. new newthread(); 
+15. }
+16. }
+
+Select one:
+Thread[New Thread,5,main]
+Thread[New Thread,1,main]
+Thread[New Thread,10,main]
+Thread[New Thread,0,main]
+
+//New thread = name, 10 = priority(usually is 5), main = I don'tk now :|.
+</td></tr><tr><td><span >A</span></td><td><span >What is the output of this program?
+1. import java.net.*;
+2. class networking {
+3. public static void main(String[] args) throws UnknownHostException {
+4. InetAddress obj1 = InetAddress.getByName("cisco.com");
+5. System.out.print(obj1.getHostName());
+6. }
+7. }
+
+Select one:
+cisco.com
+None of the others
+www.cisco.com
+cisco
+</td></tr><tr><td><span >B</span></td><td><span >SQL ________ statements may change the contents of a database.
+(1) SELECT
+(2) UPDATE
+(3) DELETE
+(4) INSERT
+ 
+Select one:
+(2) and (3)
+(2), (3) and (4)
+(1), (2) and (3)
+(1), (2) and (4)
+</td></tr><tr><td><span >B</span></td><td><span >What is the output of this program?
+1. class newthread extends Thread {
+2. Thread t1,t2;
+3. newthread() {
+4. t1 = new Thread(this,"Thread_1");
+5. t2 = new Thread(this,"Thread_2");
+6. t1.start();
+7. t2.start();
+8. }
+9. public void run() {
+10. t2.setPriority(Thread.MAX_PRIORITY); 
+11. System.out.print(t1.equals(t2));
+12. } 
+13. }
+14. class multithreaded_programing {
+15. public static void main(String args[]) {
+16. new newthread(); 
+17. }
+18. }
+
+
+Select one:
+truetrue
+falsefalse
+false
+true
+</td></tr><tr><td><span >C</span></td><td><span >Suppose DateFormatSymbols symbols = new DateFormatSymbols(), Which of the following statements is correct to return month names?
+Select one:
+String[] eras = symbols.getEras();
+String[] eras = symbols.getAmPmStrings();
+String[] monthNames = symbols.getMonths();
+String[] weekdayNames = symbols.getWeekdays();
+</td></tr><tr><td><span >A</span></td><td><span >Given a Graphics object g, to draw an circle with radius 20 centered at (50, 50), you use __________.
+Select one:
+g.drawOval(30, 30, 40, 40);
+g.drawOval(50, 50, 20, 20);
+g.drawOval(50, 50, 40, 40);
+g.drawOval(30, 30, 20, 20);
+</td></tr><tr><td><span >C</span></td><td><span >What is the output of this program?
+1. class newthread extends Thread {
+2. Thread t;
+3. newthread() {
+4. t = new Thread(this,"My Thread");
+5. t.start();
+6. }
+7. public void run() {
+8. try {
+9. t.join() 
+10. System.out.println(t.getName());
+11. }
+12. catch(Exception e) {
+13. System.out.print("Exception");
+14. }
+15. }
+16. }
+17. class multithreaded_programing {
+18. public static void main(String args[]) {
+19. new newthread(); 
+20. }
+21. }
+
+Select one:
+Thread[My Thread,5,main]
+My Thread
+Runtime Error
+Exception
+</td></tr><tr><td><span >A</span></td><td><span >Which method is used to set the text of a Label object?
+Select one:
+setText
+setLabel
+setLabelText
+setTextLabel
+</td></tr><tr><td><span >D</span></td><td><span >What is the output of this program?
+1. class newthread extends Thread {
+2. Thread t;
+3. newthread() {
+4. t = new Thread(this,"New Thread");
+5. t.start();
+6. }
+7. public void run() {
+8. System.out.println(t.isAlive());
+9. }
+10. }
+11. class multithreaded_programing {
+12. public static void main(String args[]) {
+13. new newthread(); 
+14. }
+15. }
+
+Select one:
+0
+false
+1
+true
+</td></tr><tr><td><span >C</span></td><td><span >What is the purpose of javax.swing.JFrame at this point in the program?
+Select one:
+This is a reference to the JFrame class file, JFrame.class, located in the swing package on the system.
+Copy JFrame.java file into the current directory.
+This is a reference to the JFrame.java file located in the javax.file package on the system.
+Copy JFrame class into the current directory.
+</td></tr><tr><td><span >A</span></td><td><span >To syntax for inserting a record into the Course table may begin with __________.
+Select one:
+insert into Course (
+insert into table Course {
+insert into Course {
+insert into table Course (
+</td></tr><tr><td><span >C</span></td><td><span >Which of the following is/are correct about Class.forName() method call?
+(1) This method dynamically loads the driver's class file into memory, which automatically registers it.
+(2) This method is preferable because it allows you to make the driver registration configurable and portable.
+Select one:
+(1)
+(2)
+Both (1) and (2)
+None of them
+</td></tr><tr><td><span >A</span></td><td><span >Which of the following classes have the getAvailableLocales() method?
+Select one:
+All of the others
+Collator
+NumberFormat
+Calendar
+DateFormat
+</td></tr><tr><td><span >B</span></td><td><span >Given a Graphics object g, to draw a polyline to connect points (3, 3), (4, 10), (10, 20), (2, 100), you use __________.
+Select one:
+g.drawPolygon(new int[]{3, 4, 10, 2}, new int[]{3, 10, 20, 100}, 4);
+g.drawPolyline(new int[]{3, 4, 10, 2}, new int[]{3, 10, 20, 100}, 4);
+g.drawPolyline({3, 4, 10, 2}, {3, 10, 20, 100}, 4);
+g.drawPolygon({3, 4, 10, 2}, {3, 10, 20, 100}, 4);
+</td></tr><tr><td><span >C</span></td><td><span >Which of the following statements are true?
+(1) DecimalFormat is a subclass of NumberFormat.
+(2) You can create an instance of DecimalFormat using new DecimalFormat(Local).
+(3) You can create an instance of NumberFormat using the static factory methods in NumberFormat.
+(4) An instance created using the static factory methods in NumberFormat is also an instance of DecimalFormat.
+ 
+Select one:
+(1), (2) and (4)
+(2), (3) and (4)
+(1), (3) and (4)
+(1) and (4)
+</td></tr><tr><td><span >D</span></td><td><span >The coordinate of the upper-left corner of a frame is __________.
+Select one:
+(100, 100)
+(10, 10)
+(25, 25)
+(0, 0)
+</td></tr><tr><td><span >B</span></td><td><span >Which statement below is used to inform the compiler about the location of the JSlider.class file on the system?
+Select one:
+import java.awt.JSlider
+import javax.swing.JSlider
+import java.awt.Slider
+import java.swing.JSlider
+import javax.awt.JSlider
+</td></tr><tr><td><span >A</span></td><td><span >Which of these exception is thrown by URL class's constructors?
+Select one:
+MalformedURLException
+URLNotFound
+URLNotFoundException
+URLSourceNotFound
+</td></tr><tr><td><span >A</span></td><td><span >Which of the following step closes a connection with a database?
+Select one:
+Clean up the environment by closing all database resources relying on the JVM's garbage collection.
+Open a connection using the DriverManager.getConnection () method.
+Extract data from result set using the appropriate ResultSet.getXXX () method.
+Execute a query using an object of type Statement.
+</td></tr><tr><td><span >A</span></td><td><span >Which of these class is used for creating a client for a server-client operations?
+Select one:
+AddClient.java
+ServerClient.java
+Client.java
+serverClientjava
+</td></tr><tr><td><span >C</span></td><td><span >Which of the following statements are true?
+Select one:
+Whenever a GUI component is displayed, its Graphics object is automatically created.
+The paintComponent method is automatically invoked by the JVM. You should never invoke it directly.
+All of the others.
+The paintComponent method is automatically invoked by the JVM. You should never invoke it directly.
+</td></tr><tr><td><span >C</span></td><td><span >Given a Graphics object g, to draw a filled arc with radius 20 centered at (50, 50) and start angle 0 and spanning angle 90, you use __________.
+Select one:
+g.fillArc(50, 50, 40, 40, 0, Math.toRadian(90));
+g.fillArc(30, 30, 40, 40, 0, Math.toRadian(90));
+g.fillArc(30, 30, 40, 40, 0, 90);
+g.fillArc(50, 50, 40, 40, 0, 90);
+g.fillArc(50, 50, 20, 20, 0, 90);
+</td></tr><tr><td><span >D</span></td><td><span >Which of these is a protocol for breaking and sending packets to an address across a network?
+Select one:
+Socket
+Proxy Server
+DNS
+TCP/IP
+</td></tr><tr><td><span >B</span></td><td><span >Which of these method is used to implement Runnable interface?
+Select one:
+runThread()
+run()
+stopThread()
+stop()
+</td></tr><tr><td><span >D</span></td><td><span >Which of the following statements are true regarding DecimalFormat?
+(1) A pattern can specify the minimum number of digits before the decimal point and the maximum number of digits after the decimal point.
+(2) The characters '0' and '#' are used to specify a required digit and an optional digit, respectively.
+(3) The optional digit is not displayed if it is zero.
+(4) If there are more actual digits before the decimal point, all the digits are displayed.
+ 
+Select one:
+(2), (3) and (4)
+(1), (2) and (3)
+(1) and (2)
+All
+</td></tr><tr><td><span >C</span></td><td><span >Which of the following are in the java.text package?
+Select one:
+SimpleDateFormat
+DateFormatSymbols
+All of the others
+DateFormat
+</td></tr><tr><td><span >B</span></td><td><span >Which of the following methods is correct to obtain the available locales in the classes Calendar, Collator, DateFormat, and NumberFormat?
+Select one:
+getLocales()
+getAvailableLocales()
+availableLocales()
+getAllLocales()
+</td></tr><tr><td><span >D</span></td><td><span >Which of these class is used to encapsulate IP address and DNS?
+Select one:
+ContentHandler
+DatagramPacket
+URL
+InetAddress
+</td></tr><tr><td><span >
+B</span></td><td><span >1. Which of these method is used to implement Runnable interface?
+a) stop()
+b) run()
+c) runThread()
+d) stopThread()
+</td></tr><tr><td><span >A</span></td><td><span >Which of these interface is implemented by Thread class?
+a) Runnable
+b) Connections
+c) Set
+d) MapConnections
+</td></tr><tr><td><span >D</span></td><td><span >Which of these statement is incorrect?
+a) A thread can be formed by implementing Runnable interface only.
+b) A thread can be formed by a class that extends Thread class.
+c) start() method is used to begin execution of the thread.
+d) run() method is used to begin execution of a thread before start() method in special
+</td></tr><tr><td><span >A</span></td><td><span >1. class newthread implements Runnable {
+2. Thread t;
+3. newthread() {
+4. t = new Thread(this,"My Thread");
+5. t.start();
+6. }
+7. public void run() {
+8. System.out.println(t.getName());
+9. }
+10. }
+11. class multithreaded_programing {
+12. public static void main(String args[]) {
+13. new newthread(); 
+14. }
+15. }
+advertisements
+a) My Thread
+b) Thread[My Thread,5,main]
+c) Compilation Error
+d) Runtime Error
+</td></tr><tr><td><span >B</span></td><td><span >class newthread implements Runnable {
+2. Thread t;
+3. newthread() {
+4. t = new Thread(this,"My Thread");
+5. t.start();
+6. }
+7. public void run() {
+8. System.out.println(t);
+9. }
+10. }
+11. class multithreaded_programing {
+12. public static void main(String args[]) {
+13. new newthread(); 
+14. }
+15. }
+a) My Thread
+b) Thread[My Thread,5,main]
+c) Compilation Error
+d) Runtime Error
+</td></tr><tr><td><span >C</span></td><td><span >class newthread implements Runnable {
+2. Thread t;
+3. newthread() {
+4. t = new Thread(this,"My Thread");
+5. t.start();
+6. }
+7. }
+8. class multithreaded_programing {
+9. public static void main(String args[]) {
+10. new newthread(); 
+11. }
+12. }
+a) My Thread
+b) Thread[My Thread,5,main] 
+c) Compilation Error
+d) Runtime Error
+</td></tr><tr><td><span >D</span></td><td><span >class newthread implements Runnable {
+2. Thread t;
+3. newthread() {
+4. t = new Thread(this,"New Thread");
+5. t.start();
+6. }
+7. public void run() {
+8. t.setPriority(Thread.MAX_PRIORITY); 
+9. System.out.println(t);
+10. }
+11. }
+12. class multithreaded_programing {
+13. public static void main(String args[]) {
+14. new newthread(); 
+15. }
+16. }
+a) Thread[New Thread,0,main] 
+b) Thread[New Thread,1,main] 
+c) Thread[New Thread,5,main] 
+d) Thread[New Thread,10,main]
+</td></tr><tr><td><span >D</span></td><td><span >1. class newthread implements Runnable {
+2. Thread t;
+3. newthread() {
+4. t1 = new Thread(this,"Thread_1");
+5. t2 = new Thread(this,"Thread_2");
+6. t1.start();
+7. t2.start();
+8. }
+9. public void run() {
+10. t2.setPriority(Thread.MAX_PRIORITY); 
+11. System.out.print(t1.equals(t2));
+12. } 
+13. }
+14. class multithreaded_programing {
+15. public static void main(String args[]) {
+16. new newthread(); 
+17. }
+18. }
+a) true
+b) false
+c) truetrue
+d) falsefalse
+</td></tr><tr><td><span >B</span></td><td><span >Which of these method can be used to make the main thread to be executed last among all the threads?
+a) stop()
+b) sleep()
+c) join()
+d) call()
+</td></tr><tr><td><span >C</span></td><td><span >Which of these method is used to find out that a thread is still running or not?
+a) run()
+b) Alive()
+c) isAlive()
+d) checkRun()
+</td></tr><tr><td><span >C</span></td><td><span >What is the default value of priority variable MIN_PRIORITY AND MAX_PRIORITY?
+a) 0 & 256
+b) 0 & 1
+c) 1 & 10
+d) 1 & 256
+</td></tr><tr><td><span >C</span></td><td><span >Which of these method waits for the thread to treminate?
+a) sleep()
+b) isAlive()
+c) join()
+d) stop()
+</td></tr><tr><td><span >C</span></td><td><span >Which of these method is used to explicitly set the priority of a thread?
+a) set()
+b) make()
+c) setPriority()
+d) makePriority()
+</td></tr><tr><td><span >A</span></td><td><span >What is synchronization in reference to a thread?
+a) It's a process of handling situations when two or more threads need access to a shared resource.
+b) Its a process by which many thread are able to access same shared resource simultaneously.
+c) Its a process by which a method is able to access many different threads simultaneously.
+d) Its a method that allow to many threads to access any information require.
+</td></tr><tr><td><span >B</span></td><td><span >class newthread extends Thread {
+2. newthread() {
+3. super("My Thread");
+4. start();
+5. }
+6. public void run() {
+7. System.out.println(this);
+8. }
+9. }
+10. class multithreaded_programing {
+11. public static void main(String args[]) {
+12. new newthread(); 
+13. }
+14. }
+a) My Thread
+b) Thread[My Thread,5,main] 
+c) Compilation Error
+d) Runtime Error
+</td></tr><tr><td><span >D</span></td><td><span >class newthread extends Thread {
+2. Thread t;
+3. newthread() {
+4. t = new Thread(this,"My Thread");
+5. t.start();
+6. }
+7. public void run() {
+8. try {
+9. t.join() 
+10. System.out.println(t.getName());
+11. }
+12. catch(Exception e) {
+13. System.out.print("Exception");
+14. }
+15. }
+16. }
+17. class multithreaded_programing {
+18. public static void main(String args[]) {
+19. new newthread(); 
+20. }
+21. }
+a) My Thread
+b) Thread[My Thread,5,main] 
+c) Exception
+d) Runtime Error
+</td></tr><tr><td><span >C</span></td><td><span >class newthread extends Thread {
+2. Thread t;
+3. newthread() {
+4. t = new Thread(this,"New Thread");
+5. t.start();
+6. }
+7. public void run() {
+8. System.out.println(t.isAlive());
+9. }
+10. }
+11. class multithreaded_programing {
+12. public static void main(String args[]) {
+13. new newthread(); 
+14. }
+15. }
+a) 0
+b) 1
+c) true
+d) false
+</td></tr><tr><td><span >D</span></td><td><span >1. class newthread extends Thread {
+2. Thread t1,t2;
+3. newthread() {
+4. t1 = new Thread(this,"Thread_1");
+5. t2 = new Thread(this,"Thread_2");
+6. t1.start();
+7. t2.start();
+8. }
+9. public void run() {
+10. t2.setPriority(Thread.MAX_PRIORITY); 
+11. System.out.print(t1.equals(t2));
+12. } 
+13. }
+14. class multithreaded_programing {
+15. public static void main(String args[]) {
+16. new newthread(); 
+17. }
+18. }
+a) true
+b) false
+c) truetrue
+d) falsefalse
+</td></tr><tr><td><span >B</span></td><td><span >Which of these method can be used to make the main thread to be executed last among all the threads?
+• A. stop()
+• B. sleep()
+• C. join()
+</td></tr><tr><td><span >C</span></td><td><span >. Which of these method waits for the thread to treminate?
+• A. sleep()
+• B. isAlive()
+• C. join()
+• D. stop()
+</td></tr><tr><td><span >A</span></td><td><span >What is synchronization in reference to a thread?
+• A. It's a process of handling situations when two or more threads need access to a shared resource.
+• B. Its a process by which many thread are able to access same shared resource simultaneously.
+• C. Its a process by which a method is able to access many different threads simultaneously.
+• D. Its a method that allow to many threads to access any information require.
+</td></tr><tr><td><span >D</span></td><td><span >Which of these statement is incorrect?
+• A. A thread can be formed by implementing Runnable interface only.
+• B. A thread can be formed by a class that extends Thread class.
+• C. start() method is used to begin execution of the thread.
+• D. run() method is used to begin execution of a thread before start() method in special cases.
+</td></tr><tr><td><span >D</span></td><td><span >. Which of these class is used to make a thread?
+• A. String
+• B. System
+• C. Thread
+• D. Runnable
+</td></tr><tr><td><span >C</span></td><td><span >Which of these method of Thread class is used to find out the priority given to a thread?
+• A. get()
+• B. ThreadPriority()
+• C. getPriority()
+• D. getThreadPriority()
+</td></tr><tr><td><span >A</span></td><td><span >. Which of these method of Thread class is used to Suspend a thread for a period of time?
+• A. sleep()
+• B. terminate()
+• C. suspend()
+• D. stop()
+</td></tr><tr><td><span >A</span></td><td><span >. Which function of pre defined class Thread is used to check weather current thread being checked is still running?
+• A. isAlive()
+• B. Join()
+• C. isRunning()
+• D. Alive()
+</td></tr><tr><td><span >B</span></td><td><span >17. What is multithreaded programming?
+• A. It's a process in which two different processes run simultaneously.
+• B. It's a process in which two or more parts of same process run simultaneously.
+• C. Its a process in which many different process are able to access same information.
+• D. Its a process in which a single process can access information from many sources.
+</td></tr><tr><td><span >C</span></td><td><span >. Which of these are types of multitasking?
+• A. Process based
+• B. Thread based
+• C. Process and Thread based
+• D. None of the mentioned
+</td></tr><tr><td><span >C</span></td><td><span >. Which of these packages contain all the Java's built in exceptions?
+• A. java.io
+• B. java.util
+• C. java.lang
+• D. java.net
+</td></tr><tr><td><span >D</span></td><td><span >What will happen if two thread of same priority are called to be processed simultaneously?
+• A. Any one will be executed first lexographically
+• B. Both of them will be executed simultaneously
+• C. None of them will be executed
+• D. It is dependent on the operating system.
+</td></tr><tr><td><span >D</span></td><td><span >Which of these statements is incorrect?
+• A. By multithreading CPU's idle time is minimized, and we can take maximum use of it.
+• B. By multitasking CPU's idle time is minimized, and we can take maximum use of it.
+• C. Two thread in Java can have same priority
+• D. A thread can exist only in two states, running and blocked.
+</td></tr><tr><td><span >D</span></td><td><span >Which of the following layout managers honours the preferred size of a component:
+A) CardLayout
+B) FlowLayout
+C) BorderLayout
+D) GridLayout
+</td></tr><tr><td><span >A</span></td><td><span >You should always invoke the unlock method in the finally clause.
+A. true 
+B. false
+</td></tr><tr><td><span >A</span></td><td><span >Given the following code, which set of code can be used to replace the comment so that the program displays time to the console every second?
+
+import java.applet.*;
+import java.util.*;
+
+public class Test extends Applet implements Runnable {
+ public void init() {
+ Thread t = new Thread(this);
+ t.start();
+ }
+
+ public void run() {
+ for(; ;) {
+ //display time every second
+ System.out.println(new Date().toString()); 
+ }
+ }
+}
+A. try { Thread.sleep(1000); } catch(InterruptedException e) { } 
+B. try { sleep(1000); } catch(InterruptedException e) { } 
+C. try { Thread.sleep(1000); } catch(RuntimeException e) { } 
+D. try { t.sleep(1000); } catch(InterruptedException e) { }
+</td></tr><tr><td><span >D</span></td><td><span >3 Which of the following expressions must be true if you create a thread using Thread = new Thread(object)?
+A. object instanceof Applet 
+B. object instanceof Thread 
+C. object instanceof Frame 
+D. object instanceof Runnable
+</td></tr><tr><td><span >D</span></td><td><span >How do you create a condition on a lock?
+A. Condition condition = Lock.getCondition(); 
+B. Condition condition = Lock.newCondition(); 
+C. Condition condition = lock.getCondition(); 
+D. Condition condition = lock.newCondition();
+</td></tr><tr><td><span >A</span></td><td><span >To run an object on a separate thread, the object must be a subclass of Thread.
+A. true 
+B. false
+</td></tr><tr><td><span >A</span></td><td><span >The Runnable interface is more general than the Thread class. You can convert any class that extends Thread to a class that implements Runnable.
+A. true 
+B. false
+</td></tr><tr><td><span >A</span></td><td><span >8 An exception occurs if the resume() method is invoked by a finished thread object.
+A. true 
+B. false
+</td></tr><tr><td><span >A</span></td><td><span >You can set a priority for an object of ThreadGroup using the setPrority() method.
+A. false 
+B. true
+</td></tr><tr><td><span >B</span></td><td><span >You must specify a name for the thread group that you will create.
+A. false 
+B. true
+</td></tr><tr><td><span >A</span></td><td><span >You should not directly invoke the run() method of a thread object.
+A. true 
+B. false
+</td></tr><tr><td><span >D</span></td><td><span >When creating a server on a port that is already in use, __________.
+A. the server encounters a fatal error and must be terminated. 
+B. the server is blocked until the port is available. 
+C. the server is created with no problems. 
+D. java.net.BindException occurs.
+</td></tr><tr><td><span >D</span></td><td><span >To obtain an ObjectInputStream from a socket, use ________.
+A. socket.objectInputStream() 
+B. socket.getInputStream() 
+C. socket.getObjectInputStream() 
+D. socket.getObjectStream()
+</td></tr><tr><td><span >D</span></td><td><span >You can invoke ______________ on a Socket object, say socket, to obtain an InetAddress object.
+A. socket.obtainInetAddress(); 
+B. socket.InetAddress(); 
+C. socket.retrieveInetAddress(); 
+D. socket.getInetAddress();
+</td></tr><tr><td><span >D</span></td><td><span >To connect to a server running on the same machine with the client, which of the following can be used for the hostname?
+A. InetAddress.getLocalHost(), 
+B. "127.0.0.1" 
+C. "localhost" 
+D. All of the above.
+</td></tr><tr><td><span >A</span></td><td><span >The server listens for a connection request from a client using the following statement:
+A. Socket s = serverSocket.accept() 
+B. Socket s = new Socket(ServerName); 
+C. Socket s = serverSocket.getSocket() 
+D. Socket s = new Socket(ServerName, port);
+</td></tr><tr><td><span >B</span></td><td><span >The server can create a server socket regardless of whether the port is in use or not.
+A. true 
+B. false
+</td></tr><tr><td><span >A</span></td><td><span >The client can connect to the server regardless of whether the port is in use or not.
+A. true 
+B. false
+</td></tr><tr><td><span >B</span></td><td><span >You cannot get instances of InputStream or OutputStream because InputStream and OutputStream are abstract classes.
+A. true 
+B. false
+</td></tr><tr><td><span >B</span></td><td><span >An applet cannot connect to a server program on a Web server where the applet was loaded.
+A. false 
+B. true
+</td></tr><tr><td><span >B</span></td><td><span >You can transmit objects over the socket.
+A. false 
+B. true
+</td></tr><tr><td><span >B</span></td><td><span >The URL constructor throws MalformedURLException if the URL is syntactically incorrect.
+A. true 
+B. false
+</td></tr><tr><td><span >B</span></td><td><span >getInputStream() and getOutputStream() are used to produce InputStream and OutputStream on the socket.
+A. false 
+B. true
+</td></tr><tr><td><span >C</span></td><td><span >Which of the following code is correct to obtain hour from a Calendar object cal? 
+A. cal.getHour(); 
+B. cal.get(Hour); 
+C. cal.get(Calendar.HOUR); 
+D. cal.hour();
+</td></tr><tr><td><span >A</span></td><td><span >A resource bundle is ___________
+A. a Java class file or a text file that provides locale-specific information. 
+B. a Java source code the contains image, audio, and text files. 
+C. an audio file. 
+D. an image file.
+</td></tr><tr><td><span >A</span></td><td><span >To display number in desired format, you have to use the NumberFormat class or its subclasses.
+A. true 
+B. false
+</td></tr><tr><td><span >B</span></td><td><span >You can find all the available locales from a Swing object.
+A. true 
+B. false
+</td></tr><tr><td><span >A</span></td><td><span >The locale property is in the Component class, thus, every Java Swing component has the locale property.
+A. true 
+B. false
+</td></tr><tr><td><span >A</span></td><td><span >You can get year, month, day, hour, minute, and second from an instance of GregorianCalendar.
+A. true 
+B. false
+</td></tr><tr><td><span >A</span></td><td><span >You can get hour, minute and second from the Date class.
+A. false 
+B. true
+</td></tr><tr><td><span >B</span></td><td><span >The TimeZone class has a static method for obtaining all the available time zone IDs.
+A. false 
+B. true
+</td></tr><tr><td><span >B</span></td><td><span >You can get all the available locales from an instance of Calendar, Collator, DateFormat, or NumberFormat.
+A. false 
+B. true
+</td></tr><tr><td><span >e</span></td><td><span >You can create a JTree using __________.
+A. new JTree() 
+B. new JTree(new DefaultTreeModel()) 
+C. new JTree(new Object[]{"red", "green", "blue"}) 
+D. new JTree(new Vector())
+E. All
+</td></tr><tr><td><span >C</span></td><td><span >The data in DefaultTableModel are stored in ___________.
+A. an array 
+B. a LinkedList 
+C. a Vector 
+D. an ArrayList
+</td></tr><tr><td><span >C</span></td><td><span >The data in DefaultTableModel are stored in ___________.
+A. an ArrayList 
+B. an array 
+C. a Vector 
+D. a LinkedList
+</td></tr><tr><td><span >A</span></td><td><span >Invoking Class.forName method may throw ___________.
+A. ClassNotFoundException 
+B. RuntimeException 
+C. IOException 
+D. SQLException
+</td></tr><tr><td><span >B</span></td><td><span >In a relational data model, _________ defines the representation of the data. 
+A. SQL 
+B. Structure 
+C. Language 
+D. Integrity
+</td></tr><tr><td><span >A</span></td><td><span >Which of the following statements loads the JDBC-ODBC driver?
+A. Class.forName("sun.jdbc.odbc.JdbcOdbcDriver") 
+B. Class.forName(sun.jdbc.odbc.JdbcOdbcDriver) 
+C. Class.loadClass("sun.jdbc.odbc.JdbcOdbcDriver") 
+D. Class.loadClass(sun.jdbc.odbc.JdbcOdbcDriver)
+</td></tr><tr><td><span >A</span></td><td><span >To create a statement on a Connection object conn, use
+A. Statement statement = conn.createStatement(); 
+B. Statement statement = conn.statement(); 
+C. Statement statement = Connection.createStatement(); 
+D. Statement statement = connection.create();
+</td></tr><tr><td><span >B</span></td><td><span >22 A database URL for an access database source test is ________.
+A. jdbcodbc:test 
+B. jdbc:odbc:test 
+C. test 
+D. sun.jdbc:odbc:test
+</td></tr><tr><td><span >A</span></td><td><span >Database meta data are retrieved through ____________.
+A. a Connection object 
+B. a PreparedStatement object 
+C. a Statement object 
+D. a ResultSet Object
+</td></tr><tr><td><span >A</span></td><td><span >What is the return value from 
+ stmt.executeUpdate("insert into T values (100, 'Smith')")
+A. an int value indicating how many rows are effected from the invocation 
+B. void 
+C. a value indicating whether the SQL statement has been executed successfully 
+D. an object that contains the status of the execution
+</td></tr><tr><td><span >C</span></td><td><span >A database URL for a MySQL database named test on host panda.armstrong.edu is ________.
+A. jdbc:mysql:/panda.armstrong.edu/test 
+B. jdbc.mysql://panda.armstrong.edu/test 
+C. jdbc:mysql://panda.armstrong.edu/test 
+D. jdbc.mysql.//panda.armstrong.edu/test
+</td></tr><tr><td><span >D</span></td><td><span >27 In a relational data model, _________ imposes constraints on the data. 
+A. Language 
+B. Structure 
+C. SQL 
+D. Integrity
+</td></tr><tr><td><span >B</span></td><td><span >To execute a SELECT statement "select * from Address" on a Statement object stmt, use
+A. stmt.executeUpdate("select * from Address"); 
+B. stmt.executeQuery("select * from Address"); 
+C. stmt.query("select * from Address"); 
+D. stmt.execute("select * from Address");
+</td></tr><tr><td><span >A</span></td><td><span >29 _________ specify the permissible values for an attribute. 
+A. Domain constraints 
+B. intra-relational constraints 
+C. Primary key constraints 
+D. inter-relational constraints 
+E. Foreign key constraints
+</td></tr><tr><td><span >C</span></td><td><span >31 What information may be obtained from a ResultSetMetaData object?
+A. number of rows in the result set 
+B. JDBC driver name and version 
+C. number of columns in the result set 
+D. database URL and product name
+</td></tr><tr><td><span >C</span></td><td><span >32 ________ is an attribute or a set of attributes that uniquely identifies the relation.
+A. A primary key 
+B. A key 
+C. A superkey 
+D. A candidate key
+</td></tr><tr><td><span >C</span></td><td><span >34 Where is com.mysql.jdbc.Driver located?
+A. in the standard Java library bundled with JDK 
+B. in a JAR file classes12.jar 
+C. in a JAR file mysqljdbc.jar
+</td></tr><tr><td><span >B</span></td><td><span >To connect to a local MySQL database named test, use 
+A. Connection connection = DriverManager.getConnection(jdbc:mysql://localhost/test); 
+B. Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/test"); 
+C. Connection connection = DriverManager.connect("jdbc:mysql://localhost/test"); 
+D. Connection connection = DriverManager.getConnection("mysql:jdbc://localhost/test");
+</td></tr><tr><td><span >D</span></td><td><span >Result set meta data are retrieved through ____________.
+A. a Connection object 
+B. a PreparedStatement object 
+C. a Statement object 
+D. a ResultSet Object
+</td></tr><tr><td><span >B</span></td><td><span >You want to construct a text area that is 80 character-widths wide and 10 character-heights tall. What code do you use?
+a) new TextArea(80, 10)
+b) new TextArea(10, 80)
+</td></tr><tr><td><span >C</span></td><td><span >A text field has a variable-width font. It is constructed by calling new TextField("iiiii"). What happens if you change the contents of the text field to "wwwww"? (Bear in mind that i is one of the narrowest characters, and w is one of the widest.)
+a) The text field becomes wider.
+b) The text field becomes narrower.
+c) The text field stays the same width; to see the entire contents you will have to scroll by using the ß and à keys.
+d) The text field stays the same width; to see the entire contents you will have to scroll by using the text field's horizontal scroll bar.
+</td></tr><tr><td><span >B</span></td><td><span >The CheckboxGroup class is a subclass of the Component class.
+a) True
+b) False
+</td></tr><tr><td><span >A</span></td><td><span >What are the immediate super classes of the following classes?
+a) Container class
+b) MenuComponent class
+c) Dialog class
+d) Applet class
+e) Menu class
+</td></tr><tr><td><span >C</span></td><td><span >Which Component method is used to access a component's immediate Container?
+a) getVisible()
+b) getImmediate
+c) getParent()
+d) getContainer
+</td></tr><tr><td><span >A</span></td><td><span >Which method is used to set the text of a Label object?
+a) setText( )
+b) setLabel( )
+c) setTextLabel( )
+d) setLabelText( )
+</td></tr><tr><td><span >A</span></td><td><span >Which constructor creates a TextArea with 10 rows and 20 columns?
+a) new TextArea(10, 20)
+b) new TextArea(20, 10)
+c) new TextArea(new Rows(10), new columns(20))
+d) new TextArea(200)
+</td></tr><tr><td><span >A</span></td><td><span >Which of the following creates a List with 5 visible items and multiple selection enabled?
+a) new List(5, true)
+b) new List(true, 5)
+c) new List(5, false)
+d) new List(false,5)
+</td></tr><tr><td><span >C</span></td><td><span >Suppose a Panel is added to a Frame and a Button is added to the Panel. If the Frame's font is set to 12-point TimesRoman, the Panel's font is set to 10-point TimesRoman, and the Button's font is not set, what font will be used to display the Button's label?
+a) 12-point TimesRoman
+b) 11-point TimesRoman
+c) 10-point TimesRoman
+d) 9-point TimesRoman
+</td></tr><tr><td><span >A</span></td><td><span >A Frame's background color is set to Color. Yellow, and a Button's background color is to Color.Blue. Suppose the Button is added to a Panel, which is added to the Frame. What background color will be used with the Panel?
+a) Colr.Yellow
+b) Color.Blue
+c) Color.Green
+d) Color.White
+</td></tr><tr><td><span >D</span></td><td><span >Which method is method to set the layout of a container?
+a) startLayout( )
+b) initLayout( )
+c) layoutContainer( )
+d) setLayout( )
+</td></tr><tr><td><span >A</span></td><td><span >Which method returns the preferred size of a component?
+a) getPreferredSize( )
+b) getPreferred( )
+c) getRequiredSize( )
+d) getLayout( )
+</td></tr><tr><td><span >D</span></td><td><span >Which layout should you use to organize the components of a container in a
+tabular form?
+a) CardLayout
+b) BorederLayout
+c) FlowLayout
+d) GridLayout
+</td></tr><tr><td><span >C</span></td><td><span >An application has a frame that uses a Border layout manager. Why is it probably not a good idea to put a vertical scroll bar at North in the frame?
+a) The scroll bar's height would be its preferred height, which is not likely to be enough.
+b) The scroll bar's width would be the entire width of the frame, which would be much wider than necessary.
+c) Both a and b.
+d) Neither a nor b. There is no problem with the layout as described.
+</td></tr><tr><td><span >A</span></td><td><span >What is the default layouts for a applet, a frame and a panel?
+Ans : For an applet and a panel, Flow layout is the default layout, whereas Border layout is default layout for a frame.
+If a frame uses a Grid layout manager and does not contain any panels, then all the components within the frame are the same width and height.
+a) True
+b) False.
+</td></tr><tr><td><span >B</span></td><td><span >If a frame uses its default layout manager and does not contain any panels, then all the components within the frame are the same width and height.
+a) True
+b) False.
+</td></tr><tr><td><span >B</span></td><td><span >With a Border layout manager, the component at Center gets all the space that is left over, after the components at North and South have been considered.
+a) True
+b) False
+</td></tr><tr><td><span >B</span></td><td><span >An Applet has its Layout Manager set to the default of FlowLayout. What code would be the correct to change to another Layout Manager?
+a) setLayoutManager(new GridLayout());
+b) setLayout(new GridLayout(2,2));
+c) setGridLayout(2,2,))
+d setBorderLayout();
+</td></tr><tr><td><span >D</span></td><td><span >How do you indicate where a component will be positioned using Flowlayout?
+a) North, South,East,West
+b) Assign a row/column grid reference
+c) Pass a X/Y percentage parameter to the add method
+d) Do nothing, the FlowLayout will position the component
+</td></tr><tr><td><span >A</span></td><td><span >How do you change the current layout manager for a container?
+a) Use the setLayout method
+b) Once created you cannot change the current layout manager of a component
+c) Use the setLayoutManager method
+d) Use the updateLayout method
+</td></tr><tr><td><span >B</span></td><td><span >When using the GridBagLayout manager, each new component requires a new instance of the GridBagConstraints class. Is this statement true or false?
+a) true
+b) false
+</td></tr><tr><td><span >D</span></td><td><span >In Java, what do you call an area on the screen that has nice borders and various buttons along the top border?
+ A. A window.
+ B. A screen.
+ C. A box.
+ D. A frame.
+</td></tr><tr><td><span >C</span></td><td><span >What is the name of the Swing class that is used for frames?
+ A. Window
+ B. Frame
+ C. JFrame
+ D. SwingFrame
+</td></tr><tr><td><span >A</span></td><td><span >What method sets the size of the displayed JFrame?
+ A. setSize( int width, int height)
+ B. setSize( int height, int width)
+ C. setVisible( int width, int height)
+ D. setVisible( int height, int width)
+</td></tr><tr><td><span >D</span></td><td><span >The size of a frame on the screen is measured in:
+ A. inches
+ B. nits
+ C. dots
+ D. pixels
+</td></tr><tr><td><span >D</span></td><td><span >What is a container object in GUI programming?
+
+ A. A container is another name for an array or vector.
+ B. A container is any class that is made up of other classes.
+ C. A container is a primitive variable that contains the actual data.
+ D. A container is an object like a frame that has other GUI components placed inside of it.
+</td></tr><tr><td><span >B</span></td><td><span >Fill in the blanks so that this program displays a JFrame:>
+
+import java.awt.*;
+import javax.swint.*;
+
+public class microGUI
+{
+ public static void main ( String[] args )
+ {
+ JFrame frm = new ___________();
+ frm.___________( 150, 100 );
+ frm.___________( true );
+ }
+}
+ A. Form, setVisible, setOn
+ B. JFrame, setSize, setVisible
+ C. Frame, setVisible, setSize
+ D. Window, setSize, paint
+</td></tr><tr><td><span >A</span></td><td><span >Which of the following sets the frame to 300 pixels wide by 200 high?
+
+ A. frm.setSize( 300, 200 );
+ B. frm.setSize( 200, 300 );
+ C. frm.paint( 300, 200 );
+ D. frm.setVisible( 300, 200 );
+</td></tr><tr><td><span >A</span></td><td><span >What is it called when a program is written to respond to the button clicks, menu selections, and other actions of the user in whatever order the user does them?
+a. Event-driven programming.
+b. Action-driven programming.
+c. User-driven programming.
+d. Mouse-driven programming
+</td></tr><tr><td><span >B</span></td><td><span >Usually GUI programs are written by using existing software components provided in a toolkit. The Java toolkit used in this chapter is the:
+a. GUI toolkit
+b. Abstract Windowing Toolkit
+c. Graphics Event Toolkit
+d. Java Enhancement Toolkit
+</td></tr><tr><td><span >C</span></td><td><span >The three software parts of a GUI program are:
+a. Windows, Buttons, Mice
+b. GUI Components, Graphics, Code
+c. GUI Components, Event Listeners, Application Code
+d. Frames, Code, Events
+</td></tr><tr><td><span >A</span></td><td><span >What is the one component that nearly all GUI programs will have?
+a. Frame
+b. Mouse
+c. Monitor
+d. Button
+</td></tr><tr><td><span >D</span></td><td><span >What is a container object in GUI programming?
+a. A container is another name for an array or vector.
+b. A container is any class that is made up of other classes.
+c. A container is a primitive variable that contains the actual data.
+d. A container is an object like a Frame that has other GUI components placed inside of it.
+</td></tr><tr><td><span >B</span></td><td><span >Fill in the blanks so that the following draws a Frame containing "Hello".
+import java.awt.*; 
+
+class helloFrame ___________ Frame
+{
+ public void ___________( Graphics g )
+ {
+ g.___________("Hello", 10, 50 ); 
+ }
+}
+
+public class Tester
+{
+ public static void main ( String[] args )
+ {
+ helloFrame frm = new helloFrame(); 
+ frm.setSize( 150, 100 ); 
+ frm.setVisible( true );
+ }
+}
+a. import, drawString, paint
+b. extends, paint, drawString
+c. extends, draw, paint
+d. include, drawString, paint
+</td></tr><tr><td><span >C</span></td><td><span >When is the paint() method of a frame object called?
+a. The user calls it to display the frame.
+b. The main() method calls it once when the program starts.
+c. The Java system calls it every time it decides to display the frame.
+d. The Java system calls it once when the program starts.
+</td></tr><tr><td><span >D</span></td><td><span >What is a Graphics object?
+a. The Graphics object represents the part of the Frame that you can draw on.
+b. The Graphics object represents the whole Frame.
+c. The Graphics object represents the entire monitor.
+d. The Graphics object represents the graphics board.
+</td></tr><tr><td><span >D</span></td><td><span >Which of these is a process of extracting/removing the state of an object from a stream?
+a) Serialization
+b) Externalization
+c) File Filtering
+d) Deserialization
+</td></tr><tr><td><span >D</span></td><td><span >Which of these process occur automatically by java run time system?
+a) Serialization
+b) Memory allocation
+c) Deserialization
+d) All of the mentioned
+</td></tr><tr><td><span >B</span></td><td><span >Which of these is an interface for control over serialization and deserialization?
+a) Serializable
+b) Externalization
+c) FileFilter
+d) ObjectInput
+</td></tr><tr><td><span >D</span></td><td><span >Which of these interface extends DataInput interface?
+a) Serializable
+b) Externalization
+c) ObjectOutput
+d) ObjectInput
+</td></tr><tr><td><span >C</span></td><td><span >Which of these is a method of ObjectInput interface used to deserialize an object from a stream?
+a) int read()
+b) void close()
+c) Object readObject()
+d) Object WriteObject()
+</td></tr><tr><td><span >B</span></td><td><span >Which of these class extend InputStream class?
+a) ObjectStream
+b) ObjectInputStream
+c) ObjectOutput
+d) ObjectInput
+</td></tr><tr><td><span >A</span></td><td><span >import java.io.*;
+ class streams {
+ public static void main(String[] args) {
+ try {
+ FileOutputStream fos = new FileOutputStream("serial");
+ ObjectOutputStream oos = new ObjectOutputStream(fos);
+ oos.writeInt(5);
+ oos.flush();
+ oos.close();
+ }
+ catch(Exception e) {
+ System.out.println("Serialization" + e);
+ System.exit(0);
+ }
+ try {
+ int z;
+ FileInputStream fis = new FileInputStream("serial");
+ ObjectInputStream ois = new ObjectInputStream(fis);
+ z = ois.readInt();
+ ois.close();
+ System.out.println(x); 
+ }
+ catch (Exception e) {
+ System.out.print("deserialization");
+ System.exit(0);
+ }
+ }
+ }
+a) 5
+b) void
+c) serialization
+d) deserialization
+</td></tr><tr><td><span >D</span></td><td><span >What is the output of this program?
+
+ import java.io.*;
+ class serialization {
+ public static void main(String[] args) {
+ try {
+ Myclass object1 = new Myclass("Hello", -7, 2.1e10);
+ FileOutputStream fos = new FileOutputStream("serial");
+ ObjectOutputStream oos = new ObjectOutputStream(fos);
+ oos.writeObject(object1);
+ oos.flush();
+ oos.close();
+ }
+ catch(Exception e) {
+ System.out.println("Serialization" + e);
+ System.exit(0);
+ }
+ try {
+ int x;
+ FileInputStream fis = new FileInputStream("serial");
+ ObjectInputStream ois = new ObjectInputStream(fis);
+ x = ois.readInt();
+ ois.close();
+ System.out.println(x); 
+ }
+ catch (Exception e) {
+ System.out.print("deserialization");
+ System.exit(0);
+ }
+ }
+ }
+ class Myclass implements Serializable {
+ String s;
+ int i;
+ double d;
+ Myclass(String s, int i, double d){
+ this.d = d;
+ this.i = i;
+ this.s = s;
+ }
+ }
+a) -7
+b) Hello
+c) 2.1E10
+d) deserialization
+</td></tr><tr><td><span >D</span></td><td><span >import java.io.*;
+ class serialization {
+ public static void main(String[] args) {
+ try {
+ Myclass object1 = new Myclass("Hello", -7, 2.1e10);
+ FileOutputStream fos = new FileOutputStream("serial");
+ ObjectOutputStream oos = new ObjectOutputStream(fos);
+ oos.writeObject(object1);
+ oos.flush();
+ oos.close();
+ }
+ catch(Exception e) {
+ System.out.println("Serialization" + e);
+ System.exit(0);
+ }
+ try {
+ int x;
+ FileInputStream fis = new FileInputStream("serial");
+ ObjectInputStream ois = new ObjectInputStream(fis);
+ x = ois.readInt();
+ ois.close();
+ System.out.println(x); 
+ }
+ catch (Exception e) {
+ System.out.print("deserialization");
+ System.exit(0);
+ }
+ }
+ }
+ class Myclass implements Serializable {
+ String s;
+ int i;
+ double d;
+ Myclass(String s, int i, double d){
+ this.d = d;
+ this.i = i;
+ this.s = s;
+ }
+ }
+a) -7
+b) Hello
+c) 2.1E10
+d) deserialization
+</td></tr><tr><td><span >D</span></td><td><span >What is the output of this program?
+
+ import java.io.*;
+ class streams {
+ public static void main(String[] args) {
+ try {
+ FileOutputStream fos = new FileOutputStream("serial");
+ ObjectOutputStream oos = new ObjectOutputStream(fos);
+ oos.writeFloat(3.5);
+ oos.flush();
+ oos.close();
+ }
+ catch(Exception e) {
+ System.out.println("Serialization" + e);
+ System.exit(0);
+ }
+ try {
+ FileInputStream fis = new FileInputStream("serial");
+ ObjectInputStream ois = new ObjectInputStream(fis);
+ ois.close();
+ System.out.println(ois.available()); 
+ }
+ catch (Exception e) {
+ System.out.print("deserialization");
+ System.exit(0);
+ }
+ }
+ }
+a) 1
+b) 2
+c) 3
+d) 4
+</td></tr><tr><td><span >D</span></td><td><span >import java.io.*;
+ class streams {
+ public static void main(String[] args) {
+ try {
+ FileOutputStream fos = new FileOutputStream("serial");
+ ObjectOutputStream oos = new ObjectOutputStream(fos);
+ oos.writeFloat(3.5);
+ oos.flush();
+ oos.close();
+ }
+ catch(Exception e) {
+ System.out.println("Serialization" + e);
+ System.exit(0);
+ }
+ try {
+ FileInputStream fis = new FileInputStream("serial");
+ ObjectInputStream ois = new ObjectInputStream(fis);
+ System.out.println(ois.available()); 
+ }
+ catch (Exception e) {
+ System.out.print("deserialization");
+ System.exit(0);
+ }
+ }
+ }
+a) 1
+b) 2
+c) 3
+d) 4
+</td></tr><tr><td><span >a</span></td><td><span >When creating a client on a server port that is already in use, __________.
+
+A. the client can connect to the server regardless of whether the port is in use.
+B. java.net.BindException occurs.
+C. the client is blocked until the port is available.
+D. the client encounters a fatal error and must be terminated.
+</td></tr><tr><td><span >a</span></td><td><span >The client requests a connection to a server using the following statement:
+
+A. Socket s = new Socket(ServerName, port);
+B. Socket s = serverSocket.accept();
+C. Socket s = serverSocket.getSocket();
+D. Socket s = new Socket(ServerName);
+</td></tr><tr><td><span >b</span></td><td><span >When a client requests connection to a server that has not yet started, __________.
+
+A. java.net.BindException occurs.
+B. java.net.ConnectionException occurs.
+C. the client is blocked until the server is started.
+D. the client encounters a fatal error and must be terminated.
+</td></tr><tr><td><span >b</span></td><td><span >o create an InputStream on a socket s, you use __________.
+
+A. InputStream in = new InputStream(s);
+B. InputStream in = s.getInputStream();
+C. InputStream in = s.obtainInputStream();
+D. InputStream in = s.getStream();
+</td></tr><tr><td><span >c</span></td><td><span >______________ models an IP address, which can be used to find the host name and IP address of the client.
+
+A. The ServerSocket class
+B. The Socket class
+C. The InetAddress class
+D. The Connection interface
+</td></tr><tr><td><span >c</span></td><td><span >The ____________ method in the InetAddress class returns the IP address.
+
+A. getIP()
+B. getIPAddress()
+C. getHostAddress()
+D. getAddress()
+</td></tr><tr><td><span >d</span></td><td><span >A ServerSocket can connect to ________ clients.
+
+A. one
+B. two
+C. ten
+D. an unlimited number of
+</td></tr><tr><td><span >b</span></td><td><span >You can obtain the server's hostname by invoking _________ on an applet.
+
+A. getCodeBase().host()
+B. getCodeBase().getHost()
+C. getCodeBase().hostName()
+D. getCodeBase().getHostName()
+</td></tr><tr><td><span >e</span></td><td><span >To obtain an ObjectOutputStream from a socket, use ________.
+A. socket.getOutputStream()
+B. socket.getObjectStream()
+C. socket.getObjectOutputStream()
+D. socket.objectOutputStream()
+E. new ObjectOutputStream(socket.getOutputStream())
+</td></tr><tr><td><span >a</span></td><td><span >Clicking a JButton object generates __________ events.
+
+A. ActionEvent
+B. ItemEvent
+C. ComponentEvent
+D. ContainerEvent
+</td></tr><tr><td><span >a</span></td><td><span >Pressing the Enter key on a JTextField generates _____________ events.
+
+A. ActionEvent
+B. ItemEvent
+C. ComponentEvent
+D. ContainerEvent
+</td></tr><tr><td><span >c</span></td><td><span >The method __________ appends a string s into the text area jta.
+
+A. jta.setText(s)
+B. jta.appendText(s)
+C. jta.append(s)
+D. jta.insertText(s)
+</td></tr><tr><td><span >b</span></td><td><span >To wrap a line in a text area jta, invoke ____________.
+
+A. jta.setLineWrap(false)
+B. jta.setLineWrap(true)
+C. jta.WrapLine()
+D. jta.wrapText()
+</td></tr><tr><td><span >b</span></td><td><span >To wrap a line in a text area jta on words, invoke ____________.
+
+A. jta.setWrapStyleWord(false)
+B. jta.setWrapStyleWord(true)
+C. jta.wrapStyleWord()
+D. jta.wrapWord()
+</td></tr><tr><td><span >a</span></td><td><span >The method __________ adds a text area jta to a scrollpane jScrollPane.
+
+A. jScrollPane.add(jta)
+B. jScrollPane.insert(jta)
+C. jScrollPane.addItem(jta)
+D. None of the above.
+</td></tr><tr><td><span >d</span></td><td><span >How many items can be added into a JComboBox object?
+
+A. 0
+B. 1
+C. 2
+D. Unlimited
+</td></tr><tr><td><span >b</span></td><td><span >How many items can be selected from a JComboBox object at a time?
+
+A. 0
+B. 1
+C. 2
+D. Unlimited
+</td></tr><tr><td><span >b</span></td><td><span >_______________ returns the selected item on a JComboBox jcbo.
+
+A. jcbo.getSelectedIndex()
+B. jcbo.getSelectedItem()
+C. jcbo.getSelectedIndices()
+D. jcbo.getSelectedItems()
+</td></tr><tr><td><span >c</span></td><td><span >The method __________ adds an item s into a JComboBox jcbo.
+
+A. jcbo.add(s)
+B. jcbo.addChoice(s)
+C. jcbo.addItem(s)
+D. jcbo.addObject(s).
+</td></tr><tr><td><span >b</span></td><td><span >Clicking a JComboBox object generates an ItemEvent event,
+
+A. if an item is selected. 
+B. if a new item is selected.
+</td></tr><tr><td><span >c</span></td><td><span >____________ is a component that enables the user to choose a single value or multiple values. 
+
+A. A text field
+B. A combo box
+C. A list
+D. A label
+</td></tr><tr><td><span >c</span></td><td><span >______________ sets the background of the selected item in list jlst to yellow.
+
+A. jlst.setBackground(Color.YELLOW)
+B. jlst.setSelectedBackground(Color.YELLOW)
+C. jlst.setSelectionBackground(Color.YELLOW)
+D. jlst.setSelectionbackground(Color.YELLOW)
+</td></tr><tr><td><span >a</span></td><td><span >Clicking a JList object generates __________ events.
+
+A. ActionEvent and ItemEvent
+B. ItemEvent and ComponentEvent
+C. ComponentEvent and ContainerEvent
+D. ActionEvent and ContainerEvent
+</td></tr><tr><td><span >a</span></td><td><span >The coordinate of the upper-left corner of a frame is __________.
+
+A. (0, 0)
+B. (25, 25)
+C. (100, 100)
+D. (10, 10)
+</td></tr><tr><td><span >a</span></td><td><span >Suppose a button jbt is placed in a frame, the coordinate of the button within the content pane of the frame is _______.
+
+A. (jbt.getX(), jbt.getY())
+B. (jbt.x, jbt.y)
+C. cannot be obtained
+D. (0, 0)
+</td></tr><tr><td><span >b</span></td><td><span >The header for the paintComponent method is ________________.
+
+A. private void paintComponent(Graphics g)
+B. protected void paintComponent(Graphics g)
+C. public void paintComponent(Graphics g)
+D. protected void paintComponent()
+</td></tr><tr><td><span >c</span></td><td><span >You should override the __________ method to draw things on a Swing component.
+
+A. repaint()
+B. update()
+C. paintComponent()
+D. init()
+</td></tr><tr><td><span >a</span></td><td><span >You can draw graphics on any GUI components.
+
+A. true
+B. false
+</td></tr><tr><td><span >c</span></td><td><span >To draw graphics, it is better to define a class that extends ________ and override the paintComponent method.
+
+A. JLabel
+B. JButton
+C. JPanel
+D. JComponent
+</td></tr><tr><td><span >d</span></td><td><span >import java.awt.*;
+import javax.swing.*;
+
+public class Test {
+public static void main(String[] args) {
+JFrame frame = new JFrame("My Frame");
+frame.add(new MyDrawing("Welcome to Java!"));
+frame.setSize(300, 300);
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+frame.setVisible(true);
+frame.setVisible(true);
+}
+}
+
+class MyDrawing extends JPanel {
+String message;
+
+public MyDrawing(String message) {
+this.message = message;
+}
+
+public void paintcomponent(Graphics g) {
+super.paintComponent(g);
+
+g.drawString(message, 20 ,20);
+}
+} 
+
+A. The program runs fine and displays Welcome to Java!
+B. The program has a compile error because the paintcomponent should be spelled as paintComponent.
+C. The program has a runtime error because the paintcomponent should be spelled as paintComponent.
+D. The program runs, but it does not display the message.
+E. It is a runtime error to invoke the setVisible(true) twice.
+</td></tr><tr><td><span >c</span></td><td><span >import java.awt.*;
+import javax.swing.*;
+
+public class Test extends JFrame {
+public Test() {
+add(new MyDrawing("Welcome to Java!"));
+}
+
+public static void main(String[] args) {
+JFrame frame = new JFrame();
+frame.setSize(300, 300);
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+frame.setVisible(true);
+}
+}
+
+class MyDrawing extends JPanel {
+String message;
+
+public MyDrawing(String message) {
+this.message = message;
+}
+
+public void paintComponent(Graphics g) {
+super.paintComponent(g);
+
+g.drawString(message, 20 ,20);
+}
+}
+
+A. The program runs fine and displays Welcome to Java!
+B. The program would display Welcome to Java! if new JFrame() is replaced by Test().
+C. The program would display Welcome to Java! if new JFrame() is replaced by new Test().
+D. The program would display Welcome to Java! if new JFrame() is replaced by new Test("My Frame").
+</td></tr><tr><td><span >d</span></td><td><span >Analyze the following code.
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Test1 extends JFrame {
+public Test1() {
+add(new MyCanvas());
+}
+
+public static void main(String[] args) {
+JFrame frame = new Test1();
+frame.setSize(300, 300);
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+frame.setVisible(true);
+}
+}
+
+class MyCanvas extends JPanel {
+private String message;
+
+public void setMessage(String message) {
+this.message = message;
+}
+
+public void paintComponent(Graphics g) {
+super.paintComponent(g);
+
+g.drawString(message, 20, 20);
+}
+}
+
+A. The program runs fine and displays nothing since you have not set a string value.
+B. The program would display Welcome to Java! if you replace new MyCanvas() by new MyCanvas("Welcome to Java!").
+C. The program has a compile error because new Test1() is assigned to frame.
+D. The program has a NullPointerException since message is null when g.drawString(message, 20, 20) is executed.
+</td></tr><tr><td><span >b</span></td><td><span >Given a Graphics object g, to draw a line from the upper left corner to the bottom right corner, you use __________.
+
+A. g.drawLine(0, 0, 100, 100)
+B. g.drawLine(0, 0, getWidth(), getHeight())
+C. g.drawLine(0, 0, getHeight(), getHeight())
+D. g.drawLine(0, 0, getWidth(), getWidth())
+</td></tr><tr><td><span >c</span></td><td><span >Given a Graphics object g, to draw an outline of a rectangle of width 20 and height 50 with the upper-left corner at (20, 20), you use __________.
+
+A. g.drawRect(20, 50, 20, 20)
+B. g.drawRectFill(20, 20, 20, 50)
+C. g.drawRect(20, 20, 20, 50)
+D. g.drawRectFill(20, 50, 20, 20)
+</td></tr><tr><td><span >d</span></td><td><span >Given a Graphics object g, to draw an circle with radius 20 centered at (50, 50), you use __________.
+
+A. g.drawOval(50, 50, 20, 20)
+B. g.drawOval(50, 50, 40, 40)
+C. g.drawOval(30, 30, 20, 20)
+D. g.drawOval(30, 30, 40, 40)
+</td></tr><tr><td><span >e</span></td><td><span >Given a Graphics object g, to draw a filled oval with width 20 and height 30 centered at (50, 50), you use __________.
+
+A. g.fillOval(50, 50, 20, 30)
+B. g.fillOval(50, 50, 40, 30)
+C. g.fillOval(30, 30, 20, 30)
+D. g.fillOval(30, 30, 40, 30)
+E. g.fillOval(40, 35, 20, 30)
+</td></tr><tr><td><span >a</span></td><td><span >To repaint graphics, invoke __________ on a Swing component.
+
+A. repaint()
+B. update()
+C. paintComponent()
+D. init()
+</td></tr><tr><td><span >c</span></td><td><span >Invoking __________ returns the width of the string in a FontMetrics object fm.
+
+A. getLength(s)
+B. fm.getHeight(s)
+C. fm.stringWidth(s)
+D. fm.getWidth(s)
+</td></tr><tr><td><span >b</span></td><td><span >To create an Image object from an ImageIcon object imageIcon, use the __________ method.
+
+A. imageIcon.image()
+B. imageIcon.getImage()
+C. imageIcon.setImage()
+D. imageIcon.returnImage()
+</td></tr><tr><td><span >a</span></td><td><span >Swing components that don't rely on native GUI are referred to as ___________.
+
+A. lightweight components
+B. heavyweight components
+C. GUI components
+D. non-GUI components
+</td></tr><tr><td><span >a</span></td><td><span >__________ are referred to as heavyweight components. 
+
+A. AWT components
+B. Swing components
+C. GUI components
+D. Non-GUI components
+</td></tr><tr><td><span >d</span></td><td><span >Which of the following classes is a heavyweight component?
+
+A. JButton
+B. JTextField
+C. JPanel
+D. JFrame
+</td></tr><tr><td><span >c</span></td><td><span >Which component cannot be added to a container?
+
+A. JPanel
+B. JButton
+C. JFrame
+D. JComponent
+</td></tr><tr><td><span >c</span></td><td><span >What is best to describe the relationship between a container and a SWing GUI object in the container?
+
+A. Association
+B. Aggregation
+C. Composition
+D. Inheritance
+</td></tr><tr><td><span >b</span></td><td><span >What is best to describe the relationship between a container and a layout manager?
+
+A. Association
+B. Aggregation
+C. Composition
+D. Inheritance
+</td></tr><tr><td><span >d</span></td><td><span >What is best to describe the relationship between JComponent and JButton?
+
+A. Association
+B. Aggregation
+C. Composition
+D. Inheritance
+</td></tr><tr><td><span >c</span></td><td><span >Analyze the following code.
+
+import java.awt.*;
+import javax.swing.*;
+
+public class Test {
+public static void main(String[] args) {
+Component c = new JButton("OK");
+JFrame frame = new JFrame("My Frame");
+frame.add(c);
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+frame.setVisible(true);
+}
+} 
+
+A. You cannot assign a JButton to a variable of java.awt.Component.
+B. You can only add c to a container because c's type is Component.
+C. You cannot add a Swing component directly to a JFrame using add(c) prior to JDK 1.4, but it is OK in JDK 1.5.
+D. You cannot create a JFrame using new JFrame("My Frame").
+</td></tr><tr><td><span >c</span></td><td><span >The correct order of the following three statements is ___________.
+
+1. frame.setLocationRelativeTo(null);
+2. frame.setSize(100, 200);
+3. frame.setVisible(true);
+
+
+A. 1 2 3
+B. 1 3 2
+C. 2 1 3
+D. 3 2 1
+</td></tr><tr><td><span >b</span></td><td><span >Analyze the following code.
+
+import java.awt.*;
+import javax.swing.*;
+
+public class Test {
+public static void main(String[] args) {
+JFrame frame = new JFrame("My Frame");
+frame.add(new JButton("OK"));
+frame.add(new JButton("Cancel"));
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+frame.setSize(200, 200);
+frame.setVisible(true);
+}
+} 
+
+A. Only button OK is displayed.
+B. Only button Cancel is displayed.
+C. Both button OK and button Cancel are displayed and button OK is displayed on the left side of button OK.
+D. Both button OK and button Cancel are displayed and button OK is displayed on the right side of button OK.
+</td></tr><tr><td><span >a</span></td><td><span >How many frames are displayed?
+
+import javax.swing.*;
+
+public class Test {
+public static void main(String[] args) {
+JFrame f1 = new JFrame("My Frame");
+JFrame f2 = f1;
+JFrame f3 = f2;
+f1.setVisible(true);
+f2.setVisible(true);
+f3.setVisible(true);
+}
+} 
+
+A. 1.
+B. 2.
+C. 3.
+</td></tr><tr><td><span >c</span></td><td><span >How many frames are displayed?
+
+import javax.swing.*;
+
+public class Test extends JFrame {
+public static void main(String[] args) {
+JFrame f1 = new Test();
+JFrame f2 = new Test();
+JFrame f3 = new Test();
+f1.setVisible(true);
+f2.setVisible(true);
+f3.setVisible(true);
+}
+} 
+
+A. 1.
+B. 2.
+C. 3.
+D. 0.
+</td></tr><tr><td><span >a</span></td><td><span >Which of the following statements is for terminating the program when closing the frame?
+
+A. frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+B. frame.setDefaultCloseOperation(null)
+C. frame.setDefaultCloseOperation(JFrame.STOP_ON_CLOSE)
+D. frame.setDefaultCloseOperation(JFrame.TERMINATE_ON_CLOSE)
+</td></tr><tr><td><span >c</span></td><td><span >Which of the following statements is for placing the frame's upper left corner to (200, 100)?
+
+A. frame.setLocation(100, 100)
+B. frame.setLocation(100, 200)
+C. frame.setLocation(200, 100)
+D. frame.setLocation(200, 200)
+</td></tr><tr><td><span >b</span></td><td><span >What layout manager should you use so that every component occupies the same size in the container?
+
+
+A. a FlowLayout
+B. a GridLayout
+C. a BorderLayout
+D. any layout
+</td></tr><tr><td><span >a</span></td><td><span >What should you use to position a Button within an application Frame so that the size of the Button is NOT affected by the Frame size?
+
+A. a FlowLayout 
+B. a GridLayout 
+C. the center area of a BorderLayout 
+D. the East or West area of a BorderLayout 
+E. the North or South area of a BorderLayout
+</td></tr>
+</table></html>
+</table>
+</html>
