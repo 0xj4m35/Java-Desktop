@@ -8,7 +8,7 @@ package bai4;
 import java.text.DecimalFormat;
 
 public class Student {
-    private String rollno;
+    String rollno;
     private String name;
     private int age;
     private String sex;
