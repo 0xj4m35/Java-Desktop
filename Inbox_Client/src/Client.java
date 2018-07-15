@@ -58,7 +58,7 @@ public class Client extends javax.swing.JFrame {
     
     public Client() {
         initComponents();
-        ct = new ClientThread("192.168.1.76", 1234);
+        ct = new ClientThread("localhost", 1234);
         ct.start();
     }
     
