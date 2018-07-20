@@ -18,9 +18,20 @@ import model.ProjectMember;
  */
 public class MainForm extends javax.swing.JFrame {
 
+    // Def 
+    class MyTableModel extends DefaultTableModel {
+
+        @Override
+        public Class<?> getColumnClass(int columnIndex) {
+            return getValueAt(0, columnIndex).getClass();
+        }
+        
+    }
+    MyTableModel tbModel;
     public MainForm() {
         initComponents();
-        DefaultTableModel tbModel = (DefaultTableModel)jTable1.getModel();
+        tbModel = new MyTableModel();
+        jTable1.setModel(tbModel);
         tbModel.setRowCount(0);
         String [] headers = {"ProjectID" , "ProjectName" , "EmployeeID", "IsFullTime", "Hours"};
         tbModel.setColumnIdentifiers(headers);
@@ -28,14 +39,14 @@ public class MainForm extends javax.swing.JFrame {
 
     public void showOnTable(List<ProjectMember> members) {
         try {
-            DefaultTableModel tbModel = (DefaultTableModel)jTable1.getModel();
+            
             tbModel.setRowCount(0);
             for (int i = 0; i < members.size(); i++) {
                 ProjectMember proMem = members.get(i);
                 int proID = proMem.getProjectID();
                 Project pro = new ProjectDAO().selectByID(proID);
                 String proName = pro.getName();
-                Object [] data = {proID, proName, proMem.getEmployeeID(), proMem.isIsFullTime()? "Yes":"No", proMem.getHours()};
+                Object [] data = {proID, proName, proMem.getEmployeeID(), proMem.isIsFullTime(), proMem.getHours()};
                 tbModel.addRow(data);
             }
             jLabel2.setText("Number of Employee: " + tbModel.getRowCount());
